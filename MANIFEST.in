@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include shishuvan *.css
+recursive-include shishuvan *.csv
+recursive-include shishuvan *.html
+recursive-include shishuvan *.ico
+recursive-include shishuvan *.js
+recursive-include shishuvan *.json
+recursive-include shishuvan *.md
+recursive-include shishuvan *.png
+recursive-include shishuvan *.py
+recursive-include shishuvan *.svg
+recursive-include shishuvan *.txt
+recursive-exclude shishuvan *.pyc
