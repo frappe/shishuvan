@@ -1,0 +1,173 @@
+"Data Import Template"
+"Table:","Custom Field"
+""
+""
+"Notes:"
+"Please do not change the template headings."
+"First data column must be blank."
+"If you are uploading new records, leave the ""name"" (ID) column blank."
+"If you are uploading new records, ""Naming Series"" becomes mandatory, if present."
+"Only mandatory fields are necessary for new records. You can delete non-mandatory columns if you wish."
+"For updating, you can update only selective columns."
+"You can only upload upto 5000 records in one go. (may be less in some cases)"
+""
+"DocType:","Custom Field","","","","","","","","","","","","","","","","","","","","","","","","","","",""
+"Column Labels:","ID","Document","Field Type","Label","Fieldname","Insert After","Precision","Options","Collapsible","Collapsible Depends On","Default Value","Depends On","Field Description","Permission Level","Width","Is Mandatory Field","Unique","Read Only","Ignore User Permissions","Hidden","Print Hide","Print Hide If No Value","No Copy","Allow on Submit","In Report Filter","In List View","Report Hide","Ignore XSS Filter"
+"Column Name:","name","dt","fieldtype","label","fieldname","insert_after","precision","options","collapsible","collapsible_depends_on","default","depends_on","description","permlevel","width","reqd","unique","read_only","ignore_user_permissions","hidden","print_hide","print_hide_if_no_value","no_copy","allow_on_submit","in_filter","in_list_view","report_hide","ignore_xss_filter"
+"Mandatory:","Yes","Yes","Yes","No","No","No","No","No","No","No","No","No","No","No","No","No","No","No","No","No","No","No","No","No","No","No","No","No"
+"Type:","Data (text)","Link","Select","Data","Data","Select","Select","Text","Check","Code","Text","Code","Text","Int","Data","Check","Check","Check","Check","Check","Check","Check","Check","Check","Check","Check","Check","Check"
+"Info:","","Valid DocType","One of: Attach, Attach Image, Button, Check, Code, Column Break, Currency, Data, Date, Datetime, Dynamic Link, Float, HTML, Image, Int, Link, Long Text, Password, Percent, Read Only, Section Break, Select, Small Text, Table, Text, Text Editor, Time","","","","One of: 1, 2, 3, 4, 5, 6, 7, 8, 9","","0 or 1","","","","","Integer","","0 or 1","0 or 1","0 or 1","0 or 1","0 or 1","0 or 1","0 or 1","0 or 1","0 or 1","0 or 1","0 or 1","0 or 1","0 or 1"
+"Start entering data below this line"
+"","""Course-group""","Course","Data","Group","group","course_code","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,1,0,0
+"","""Instructor-designation""","Instructor","Link","Designation","designation","department","","Designation",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-office_remark""","Student Applicant","Data","Office Remark","office_remark","office_grade","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-office_grade""","Student Applicant","Data","Office Grade","office_grade","office_work","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-office_work""","Student Applicant","Section Break","Office Work","office_work","question_4","","",0,"","","","",0,"",0,0,0,0,1,0,0,0,0,0,0,0,0
+"","""Student Applicant-question_4""","Student Applicant","Text","Question 4","question_4","question_3","","",0,"","","","When applications exceed the number of seats available, what criteria should the school apply for selection that are considered just and fair by all ?",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-question_3""","Student Applicant","Text","Question 3","question_3","question_2","","",0,"","","","Some children take time to settle in the school. We would like the first experience of the school to be gentle and comfortable for him/her. If your child takes time to settle in, would you or a family member be able to spend time in the school with him/her as long as it takes(if no, please explain why, giving reasons.)",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-question_2""","Student Applicant","Text","Question 2","question_2","question_1","","",0,"","","","You are aware that Shishuvan's structure is non-competitive (no exams until class 7, no ranking, no comparison of students). After passing out from such a school how do you see your child meeting the challenges of today's highly competitive driven world ?",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-question_1""","Student Applicant","Text","Question 1","question_1","additional_questions","","",0,"","","","Shishuvan believes that one aim of education is to be a good human being. What else do you consider to be desirable objectives for a good school ?",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-additional_questions""","Student Applicant","Section Break","As the school believes in strong partnership between the parents and the school, please fill up the following questionnaire.","additional_questions","what_kind_of_physical_activity_does_your_child_indulge_in","","",0,"","","","This will help us get an insight into the way you think and feel about education and schools",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-what_kind_of_physical_activity_does_your_child_indulge_in""","Student Applicant","Text","What kind of physical activity does your child indulge in","what_kind_of_physical_activity_does_your_child_indulge_in","other_spend_most_time","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-other_spend_most_time""","Student Applicant","Data","Other spend most time","other_spend_most_time","family_occasions","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-family_occasions""","Student Applicant","Check","Family Occasions","family_occasions","parks","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-parks""","Student Applicant","Check","Parks","parks","social_group","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-social_group""","Student Applicant","Check","Social Group","social_group","classes","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-classes""","Student Applicant","Check","Classes","classes","building_society","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-building_society""","Student Applicant","Check","Building Society","building_society","in_which_spaces_do_they_interact_with_children","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-in_which_spaces_do_they_interact_with_children""","Student Applicant","Section Break","In which spaces do they interact with children","in_which_spaces_do_they_interact_with_children","does_your_child_have_opportunities_to_play_with_other_children","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-does_your_child_have_opportunities_to_play_with_other_children""","Student Applicant","Check","Does your child have opportunities to play with other children","does_your_child_have_opportunities_to_play_with_other_children","with_which_adult_does_your_child_spend_most_of_the_time","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-with_which_adult_does_your_child_spend_most_of_the_time""","Student Applicant","Select","With which Adult does your child spend most of the time","with_which_adult_does_your_child_spend_most_of_the_time","favourite_programmes_on_tv","","Mother
+Father
+Grandmother
+Grandfather
+Domestic Help
+Others",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-favourite_programmes_on_tv""","Student Applicant","Text","Favourite Programmes on TV","favourite_programmes_on_tv","number_of_hours_your_child_watches_tv_everyday","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-number_of_hours_your_child_watches_tv_everyday""","Student Applicant","Int","Number of hours your child watches TV everyday","number_of_hours_your_child_watches_tv_everyday","eating_habits","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-eating_habits""","Student Applicant","Text","Eating Habits","eating_habits","any_other_emotions","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-any_other_emotions""","Student Applicant","Data","Any Other emotions","any_other_emotions","fear_of","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-fear_of""","Student Applicant","Data","Fear Of","fear_of","nightmares_bedwetting","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-nightmares_bedwetting""","Student Applicant","Check","Nightmares Bedwetting","nightmares_bedwetting","hitting_bitting","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-hitting_bitting""","Student Applicant","Check","Hitting Bitting","hitting_bitting","thumb_sucking","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-thumb_sucking""","Student Applicant","Check","Thumb Sucking","thumb_sucking","nail_biting","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-nail_biting""","Student Applicant","Check","Nail biting","nail_biting","temper_tantrums","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-temper_tantrums""","Student Applicant","Check","Temper tantrums","temper_tantrums","anger","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-anger""","Student Applicant","Check","Anger","anger","currently_does_your_child_exhibit_any_of_the_following_behavioural_emotional_attributes","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-currently_does_your_child_exhibit_any_of_the_following_behavioural_emotional_attributes""","Student Applicant","Section Break","Currently does your child exhibit any of the following behavioural emotional attributes","currently_does_your_child_exhibit_any_of_the_following_behavioural_emotional_attributes","any_description_of_any_of_the_above_and_when","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-any_description_of_any_of_the_above_and_when""","Student Applicant","Text","Any description of any of the above and when","any_description_of_any_of_the_above_and_when","other_family_detail","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-other_family_detail""","Student Applicant","Check","Other family detail","other_family_detail","exposure_of_chronic_arguments_or_fights","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-exposure_of_chronic_arguments_or_fights""","Student Applicant","Check","Exposure of Chronic arguments or fights","exposure_of_chronic_arguments_or_fights","birth_of_a_sibling","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-birth_of_a_sibling""","Student Applicant","Check","Birth of a Sibling","birth_of_a_sibling","death_of_a_pet","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-death_of_a_pet""","Student Applicant","Check","Death of a Pet","death_of_a_pet","parents_new_job","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-parents_new_job""","Student Applicant","Check","Parents new Job","parents_new_job","move_to_new_city_or_home","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-move_to_new_city_or_home""","Student Applicant","Check","Move to new City or Home","move_to_new_city_or_home","transition_from_joint_family_to_nuclear_family_or_vice_versa","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-transition_from_joint_family_to_nuclear_family_or_vice_versa""","Student Applicant","Check","Transition from Joint Family to Nuclear Family or Vice Versa","transition_from_joint_family_to_nuclear_family_or_vice_versa","serious_illness_of_family_member","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-serious_illness_of_family_member""","Student Applicant","Check","Serious Illness of Family Member","serious_illness_of_family_member","death_of_family_member","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-death_of_family_member""","Student Applicant","Check","Death of Family Member","death_of_family_member","separation_divorce_of_parents","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-separation_divorce_of_parents""","Student Applicant","Check","Separation Divorce of Parents","separation_divorce_of_parents","family_details","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-family_details""","Student Applicant","Section Break","Family Details","family_details","do_you_as_a_parent_have_any_concerns_about_your_child","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-do_you_as_a_parent_have_any_concerns_about_your_child""","Student Applicant","Text","Do you as a parent have any concerns about your child","do_you_as_a_parent_have_any_concerns_about_your_child","shared_his_toys_with_others","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-shared_his_toys_with_others""","Student Applicant","Int","Shared his / her toys with others","shared_his_toys_with_others","smiled_at_familiar_faces","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-smiled_at_familiar_faces""","Student Applicant","Int","Smiled at familiar faces","smiled_at_familiar_faces","toiled_trained","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-toiled_trained""","Student Applicant","Int","Toiled trained","toiled_trained","repeated_words_spoken_to_him","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-repeated_words_spoken_to_him""","Student Applicant","Int","Repeated words spoken to him / her","repeated_words_spoken_to_him","cooperated_with_dressing","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-cooperated_with_dressing""","Student Applicant","Int","Cooperated with dressing","cooperated_with_dressing","sorted_shapes","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-sorted_shapes""","Student Applicant","Int","Sorted shapes","sorted_shapes","followed_simple_instructions","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-followed_simple_instructions""","Student Applicant","Int","Followed simple instructions","followed_simple_instructions","spoke_word_sentences","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-spoke_word_sentences""","Student Applicant","Int","Spoke 2 to 4 word sentences","spoke_word_sentences","recognized_the_names_of_familiar_people_object_and_body_parts","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-recognized_the_names_of_familiar_people_object_and_body_parts""","Student Applicant","Int","Recognized the names of familiar people object and body parts","recognized_the_names_of_familiar_people_object_and_body_parts","could_feed_self_with_or_without_a_soppn","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-could_feed_self_with_or_without_a_soppn""","Student Applicant","Int","Could feed self with or without a soppn","could_feed_self_with_or_without_a_soppn","pulled_toys_along_while_walking","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-pulled_toys_along_while_walking""","Student Applicant","Int","Pulled toys along, while walking","pulled_toys_along_while_walking","could_walk_independendently","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-could_walk_independendently""","Student Applicant","Int","Could walk independendently","could_walk_independendently","held_head_steady","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-held_head_steady""","Student Applicant","Int","Held head steady","held_head_steady","milestones","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-milestones""","Student Applicant","Section Break","Milestones","milestones","does_your_child_have_any_disablities","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-does_your_child_have_any_disablities""","Student Applicant","Text","Does your child have any disablities","does_your_child_have_any_disablities","does_your_child_have_any_allergies","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-does_your_child_have_any_allergies""","Student Applicant","Text","Does your child have any allergies","does_your_child_have_any_allergies","is_your_child_currently_under_any_kind_of_medication_","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-is_your_child_currently_under_any_kind_of_medication_""","Student Applicant","Text","Is your child currently under any kind of medication ","is_your_child_currently_under_any_kind_of_medication_","does_your_child_have_any_chronic_or_debilitating_illness","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-does_your_child_have_any_chronic_or_debilitating_illness""","Student Applicant","Text","Does your child have any chronic or debilitating illness","does_your_child_have_any_chronic_or_debilitating_illness","has_your_child_ever_been_hospitalized_after_birth_till_now","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-has_your_child_ever_been_hospitalized_after_birth_till_now""","Student Applicant","Text","Has your child ever been hospitalized after birth till now ? Describe the circumstance.","has_your_child_ever_been_hospitalized_after_birth_till_now","if_not_please_mention_why","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-if_not_please_mention_why""","Student Applicant","Text","If not please mention why ?","if_not_please_mention_why","has_the_child_been_through_the_required_immunizations","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-has_the_child_been_through_the_required_immunizations""","Student Applicant","Check","Has the child been through the required immunizations","has_the_child_been_through_the_required_immunizations","illness_section_break","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-illness_section_break""","Student Applicant","Section Break","","illness_section_break","adenoids_tonsilitis","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-adenoids_tonsilitis""","Student Applicant","Check","Adenoids Tonsilitis","adenoids_tonsilitis","epileptic_fits_convulsions","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-epileptic_fits_convulsions""","Student Applicant","Check","Epileptic Fits Convulsions","epileptic_fits_convulsions","rheumatic_fever","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-rheumatic_fever""","Student Applicant","Check","Rheumatic Fever","rheumatic_fever","rubella","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-rubella""","Student Applicant","Check","Rubella","rubella","stomach_virus","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-stomach_virus""","Student Applicant","Check","Stomach Virus","stomach_virus","measles","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-measles""","Student Applicant","Check","Measles","measles","cold_pneumonia","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-cold_pneumonia""","Student Applicant","Check","Cold Pneumonia","cold_pneumonia","headache_meningitis","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-headache_meningitis""","Student Applicant","Check","Headache Meningitis","headache_meningitis","illness_col_break","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-illness_col_break""","Student Applicant","Column Break","","illness_col_break","other","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-other""","Student Applicant","Data","Other","other","diarrhea","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-diarrhea""","Student Applicant","Check","Diarrhea","diarrhea","mumps","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-mumps""","Student Applicant","Check","Mumps","mumps","chicken_pox","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-chicken_pox""","Student Applicant","Check","Chicken Pox","chicken_pox","ear_infection","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-ear_infection""","Student Applicant","Check","Ear Infection","ear_infection","scarlet_fever","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-scarlet_fever""","Student Applicant","Check","Scarlet Fever","scarlet_fever","flu","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-flu""","Student Applicant","Check","Flu","flu","colic","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-colic""","Student Applicant","Check","Colic","colic","tick_if_the_child_has_had_any_of_the_following_illness","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-tick_if_the_child_has_had_any_of_the_following_illness""","Student Applicant","Section Break","Tick if the child has had any of the following illness","tick_if_the_child_has_had_any_of_the_following_illness","how_frequent_are_the_doctors_visits_now","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-how_frequent_are_the_doctors_visits_now""","Student Applicant","Data","How frequent are the doctors visits now","how_frequent_are_the_doctors_visits_now","first_paediatric_visit","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-first_paediatric_visit""","Student Applicant","Text","When did your child have his/her first paediatric visit ? Name & address of the paediatrician/family doctor.","first_paediatric_visit","describe_childs_general_behaviour","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-describe_childs_general_behaviour""","Student Applicant","Text","Describe childs general behaviour during the neonatal period (first four weeks)","describe_childs_general_behaviour","childs_medical_details","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-childs_medical_details""","Student Applicant","Section Break","Child's Medical Details","childs_medical_details","if_yes_please_describe_the_reasons","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-if_yes_please_describe_the_reasons""","Student Applicant","Text","if yes please describe the reasons","if_yes_please_describe_the_reasons","was_the_infant_hospitalized","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-was_the_infant_hospitalized""","Student Applicant","Check","Was the infant hospitalized","was_the_infant_hospitalized","did_the_child_cry_immediately_after_birth","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-did_the_child_cry_immediately_after_birth""","Student Applicant","Check","Did the child cry immediately after birth (Birth cry)","did_the_child_cry_immediately_after_birth","childs_health_at_birth","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-childs_health_at_birth""","Student Applicant","Text","Child's health at birth (describe any health problems.)","childs_health_at_birth","number_of_previous_pregnancies","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-number_of_previous_pregnancies""","Student Applicant","Int","Number of previous pregnancies","number_of_previous_pregnancies","any_complications_or_medication_taken_during_the_pregnancy","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-any_complications_or_medication_taken_during_the_pregnancy""","Student Applicant","Text","Any complications or medication taken during the pregnancy","any_complications_or_medication_taken_during_the_pregnancy","type_of_delivery","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-type_of_delivery""","Student Applicant","Data","Type of delivery","type_of_delivery","pregnancy_details","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-pregnancy_details""","Student Applicant","Section Break","Pregnancy Details","pregnancy_details","age_of_siblings","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-age_of_siblings""","Student Applicant","Data","Age of siblings","age_of_siblings","fatherss_age_at_the_time_of_birth","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-fatherss_age_at_the_time_of_birth""","Student Applicant","Int","Fathers's age at the time of birth","fatherss_age_at_the_time_of_birth","mothers_age_at_the_time_of_birth","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-mothers_age_at_the_time_of_birth""","Student Applicant","Int","Mother's age at the time of birth","mothers_age_at_the_time_of_birth","col_break_2","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-col_break_2""","Student Applicant","Column Break","","col_break_2","is_the_child_adopted","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-is_the_child_adopted""","Student Applicant","Check","Is the child adopted","is_the_child_adopted","your_child_is_the_eldest","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-your_child_is_the_eldest""","Student Applicant","Data","Your child is the Eldest / Middle / Youngest","your_child_is_the_eldest","number_of_siblings","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-number_of_siblings""","Student Applicant","Int","Number of siblings","number_of_siblings","family","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-family""","Student Applicant","Select","Family - Extended/Nuclear/Single Parent","family","section_break_56","","Extended
+Nuclear
+Single Parent",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-section_break_56""","Student Applicant","Section Break","General Information","section_break_56","amended_from","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-fathers_educational_certificates""","Student Applicant","Attach","Father's Educational Certificates","fathers_educational_certificates","mothers_educational_certificates","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-mothers_educational_certificates""","Student Applicant","Attach","Mother's Educational Certificates","mothers_educational_certificates","col_break_1","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-col_break_1""","Student Applicant","Column Break","","col_break_1","minority_caste_certificate","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-minority_caste_certificate""","Student Applicant","Attach","Minority Caste Certificate (if applicable)","minority_caste_certificate","vaccination_record_attached","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-vaccination_record_attached""","Student Applicant","Attach","Vaccination Record Attached","vaccination_record_attached","birth_certificate","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-birth_certificate""","Student Applicant","Attach","Birth Certificate","birth_certificate","section_break_23","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-heard_from""","Student Applicant","Data","You heard about Shishuvan through ?","heard_from","how_would_you_help","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-how_would_you_help""","Student Applicant","Text","How would you like to help the school as parents ?","how_would_you_help","ideal_partnership","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-ideal_partnership""","Student Applicant","Text","According to you, what is an ideal partnership between the school and parents, in the education of the child ?","ideal_partnership","why_shishuvan","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-why_shishuvan""","Student Applicant","Text","Why is Shishuvan a choice for your child ?","why_shishuvan","questionnaire","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-questionnaire""","Student Applicant","Section Break","We would like to know your views on education. Please comment on the following.","questionnaire","siblings","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-father_email_id""","Student Applicant","Data","Email ID","father_email_id","father_mobile_number","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-father_mobile_number""","Student Applicant","Data","Mobile Number","father_mobile_number","father_landline_number","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-father_landline_number""","Student Applicant","Data","Landline Number","father_landline_number","father_work_address","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-father_work_address""","Student Applicant","Data","Work Address","father_work_address","father_occupation","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-father_occupation""","Student Applicant","Data","Occupation","father_occupation","father_name_of_college","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-father_name_of_college""","Student Applicant","Data","Name of College","father_name_of_college","father_education","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-father_education""","Student Applicant","Data","Education","father_education","father_age","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-father_age""","Student Applicant","Data","Age","father_age","father_name","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-father_name""","Student Applicant","Data","Name","father_name","father","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-father""","Student Applicant","Section Break","Father","father","mother_email_id","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-mother_email_id""","Student Applicant","Data","Email ID","mother_email_id","mother_mobile_number","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-mother_mobile_number""","Student Applicant","Data","Mobile Number","mother_mobile_number","mother_landline_number","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-mother_landline_number""","Student Applicant","Data","Landline Number","mother_landline_number","mother_work_address","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-mother_work_address""","Student Applicant","Data","Work Address","mother_work_address","mother_occupation","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-mother_occupation""","Student Applicant","Data","Occupation","mother_occupation","mother_name_of_college","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-mother_name_of_college""","Student Applicant","Data","Name of College","mother_name_of_college","mother_education","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-mother_education""","Student Applicant","Data","Education","mother_education","mother_age","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-mother_age""","Student Applicant","Data","Age","mother_age","mother_name","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-mother_name""","Student Applicant","Data","Name","mother_name","mother","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-mother""","Student Applicant","Section Break","Mother","mother","guardians","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-area""","Student Applicant","Data","Area","area","address_line_2","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-previous_schooling""","Student Applicant","Data","Previous Schooling","previous_schooling","language_spoken_at_home","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-language_spoken_at_home""","Student Applicant","Data","Language Spoken at Home","language_spoken_at_home","nationality","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-village""","Student Applicant","Data","Village","village","birth_registration_number","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-birth_registration_number""","Student Applicant","Data","Birth Registration Number","birth_registration_number","column_break_12","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-student_cast""","Student Applicant","Data","Cast","student_cast","religion","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-religion""","Student Applicant","Data","Religion","religion","native_place","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Student Applicant-native_place""","Student Applicant","Data","Native Place","native_place","date_of_birth","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
+"","""Print Settings-compact_item_print""","Print Settings","Check","Compact Item Print","compact_item_print","with_letterhead","","",0,"","","","",0,"",0,0,0,0,0,0,0,0,0,0,0,0,0
