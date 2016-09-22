@@ -11,7 +11,7 @@
  "introduction_text": "Application for Admission", 
  "is_standard": 1, 
  "login_required": 1, 
- "modified": "2016-09-20 07:08:34.103515", 
+ "modified": "2016-09-22 05:42:43.745808", 
  "modified_by": "Administrator", 
  "module": "Shishuvan", 
  "name": "nursery-admission-form", 
@@ -39,21 +39,23 @@
    "reqd": 1
   }, 
   {
+   "default": "Nursery", 
    "fieldname": "program", 
    "fieldtype": "Link", 
    "hidden": 0, 
    "label": "Seeking Admission In", 
    "options": "Program", 
-   "read_only": 0, 
+   "read_only": 1, 
    "reqd": 1
   }, 
   {
+   "default": "2017-18", 
    "fieldname": "academic_year", 
    "fieldtype": "Link", 
    "hidden": 0, 
    "label": "Academic Year", 
    "options": "Academic Year", 
-   "read_only": 0, 
+   "read_only": 1, 
    "reqd": 1
   }, 
   {
@@ -170,6 +172,15 @@
    "reqd": 0
   }, 
   {
+   "fieldname": "", 
+   "fieldtype": "Page Break", 
+   "hidden": 0, 
+   "label": "Personal Details", 
+   "options": "", 
+   "read_only": 0, 
+   "reqd": 0
+  }, 
+  {
    "fieldname": "native_place", 
    "fieldtype": "Data", 
    "hidden": 0, 
@@ -220,15 +231,6 @@
    "reqd": 0
   }, 
   {
-   "fieldname": "", 
-   "fieldtype": "Page Break", 
-   "hidden": 0, 
-   "label": "Family Details", 
-   "options": "", 
-   "read_only": 0, 
-   "reqd": 0
-  }, 
-  {
    "fieldname": "religion", 
    "fieldtype": "Data", 
    "hidden": 0, 
@@ -254,7 +256,7 @@
    "reqd": 0
   }, 
   {
-   "fieldtype": "Section Break", 
+   "fieldtype": "Page Break", 
    "hidden": 0, 
    "label": "Mother's Details", 
    "read_only": 0, 
@@ -333,7 +335,7 @@
    "reqd": 0
   }, 
   {
-   "fieldtype": "Section Break", 
+   "fieldtype": "Page Break", 
    "hidden": 0, 
    "label": "Father's Details", 
    "read_only": 0, 
@@ -514,7 +516,7 @@
   {
    "fieldtype": "Page Break", 
    "hidden": 0, 
-   "label": "Birth Details", 
+   "label": "Child Health History", 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -546,7 +548,7 @@
    "fieldname": "mothers_age_at_the_time_of_birth", 
    "fieldtype": "Data", 
    "hidden": 0, 
-   "label": "Mother's age at the time of birth", 
+   "label": "Mother's age at the time of child's birth/ adoption", 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -554,7 +556,7 @@
    "fieldname": "fatherss_age_at_the_time_of_birth", 
    "fieldtype": "Data", 
    "hidden": 0, 
-   "label": "Fathers's age at the time of birth", 
+   "label": "Fathers's age at time of child's birth/ adoption", 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -568,9 +570,10 @@
   }, 
   {
    "fieldname": "your_child_is_the_eldest", 
-   "fieldtype": "Data", 
+   "fieldtype": "Select", 
    "hidden": 0, 
    "label": "Your child is the Eldest / Middle / Youngest", 
+   "options": "Eldest\nMiddle\nYoungest", 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -755,14 +758,6 @@
    "reqd": 0
   }, 
   {
-   "fieldname": "other", 
-   "fieldtype": "Data", 
-   "hidden": 0, 
-   "label": "Other", 
-   "read_only": 0, 
-   "reqd": 0
-  }, 
-  {
    "fieldname": "", 
    "fieldtype": "Column Break", 
    "hidden": 0, 
@@ -835,6 +830,14 @@
    "reqd": 0
   }, 
   {
+   "fieldname": "other", 
+   "fieldtype": "Data", 
+   "hidden": 0, 
+   "label": "Other", 
+   "read_only": 0, 
+   "reqd": 0
+  }, 
+  {
    "fieldname": "has_the_child_been_through_the_required_immunizations", 
    "fieldtype": "Check", 
    "hidden": 0, 
@@ -902,7 +905,7 @@
    "fieldname": "", 
    "fieldtype": "Section Break", 
    "hidden": 0, 
-   "label": "Milestones - Leave blank if not achieved. Mention Age if achieved.", 
+   "label": "Mention Age at which the following milestones were achieved (in Months)", 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -1286,6 +1289,15 @@
    "fieldtype": "Text", 
    "hidden": 0, 
    "label": "What kind of physical activity does your child indulge in", 
+   "read_only": 0, 
+   "reqd": 0
+  }, 
+  {
+   "description": "Shishuvan believes that one aim of education is to be a good human being. What else do you consider to be desirable objectives for a good school ?", 
+   "fieldname": "", 
+   "fieldtype": "Page Break", 
+   "hidden": 0, 
+   "label": "Questionnaire", 
    "read_only": 0, 
    "reqd": 0
   }, 
