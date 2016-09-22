@@ -13,7 +13,7 @@ app_license = "MIT"
 
 doc_events = {
 	"Student Applicant": {
-		"validate": "shishuvan.customization.validate_addmission_age_criteria"
+		"validate": "shishuvan.customization.validate_student_applicant"
 	}
 }
 # Includes in <head>
