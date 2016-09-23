@@ -11,7 +11,7 @@
  "introduction_text": "Application for Admission", 
  "is_standard": 1, 
  "login_required": 1, 
- "modified": "2016-09-22 15:55:43.680145", 
+ "modified": "2016-09-23 13:04:58.718980", 
  "modified_by": "Administrator", 
  "module": "Shishuvan", 
  "name": "nursery-admission-form", 
@@ -59,6 +59,14 @@
    "reqd": 1
   }, 
   {
+   "fieldname": "date_of_birth", 
+   "fieldtype": "Date", 
+   "hidden": 0, 
+   "label": "Date of Birth", 
+   "read_only": 0, 
+   "reqd": 1
+  }, 
+  {
    "fieldname": "first_name", 
    "fieldtype": "Data", 
    "hidden": 0, 
@@ -88,7 +96,7 @@
    "hidden": 0, 
    "label": "Image", 
    "read_only": 0, 
-   "reqd": 0
+   "reqd": 1
   }, 
   {
    "fieldname": "gender", 
@@ -97,15 +105,7 @@
    "label": "Gender", 
    "options": "\nMale\nFemale", 
    "read_only": 0, 
-   "reqd": 0
-  }, 
-  {
-   "fieldname": "date_of_birth", 
-   "fieldtype": "Date", 
-   "hidden": 0, 
-   "label": "Date of Birth", 
-   "read_only": 0, 
-   "reqd": 0
+   "reqd": 1
   }, 
   {
    "fieldname": "birth_registration_number", 
@@ -113,7 +113,7 @@
    "hidden": 0, 
    "label": "Birth Registration Number", 
    "read_only": 0, 
-   "reqd": 0
+   "reqd": 1
   }, 
   {
    "fieldname": "", 
@@ -129,7 +129,7 @@
    "hidden": 0, 
    "label": "Address Line 1", 
    "read_only": 0, 
-   "reqd": 0
+   "reqd": 1
   }, 
   {
    "fieldname": "address_line_2", 
@@ -137,7 +137,7 @@
    "hidden": 0, 
    "label": "Address Line 2", 
    "read_only": 0, 
-   "reqd": 0
+   "reqd": 1
   }, 
   {
    "fieldname": "area", 
@@ -145,7 +145,7 @@
    "hidden": 0, 
    "label": "Area", 
    "read_only": 0, 
-   "reqd": 0
+   "reqd": 1
   }, 
   {
    "fieldname": "city", 
@@ -153,7 +153,7 @@
    "hidden": 0, 
    "label": "City", 
    "read_only": 0, 
-   "reqd": 0
+   "reqd": 1
   }, 
   {
    "fieldname": "state", 
@@ -161,7 +161,7 @@
    "hidden": 0, 
    "label": "State", 
    "read_only": 0, 
-   "reqd": 0
+   "reqd": 1
   }, 
   {
    "fieldname": "pincode", 
@@ -169,7 +169,7 @@
    "hidden": 0, 
    "label": "Pincode", 
    "read_only": 0, 
-   "reqd": 0
+   "reqd": 1
   }, 
   {
    "fieldname": "", 
@@ -186,7 +186,7 @@
    "hidden": 0, 
    "label": "Native Place", 
    "read_only": 0, 
-   "reqd": 0
+   "reqd": 1
   }, 
   {
    "fieldname": "village", 
@@ -194,7 +194,7 @@
    "hidden": 0, 
    "label": "Village", 
    "read_only": 0, 
-   "reqd": 0
+   "reqd": 1
   }, 
   {
    "default": "India", 
@@ -204,7 +204,7 @@
    "label": "Nationality", 
    "options": "Country", 
    "read_only": 0, 
-   "reqd": 0
+   "reqd": 1
   }, 
   {
    "fieldname": "blood_group", 
@@ -213,7 +213,7 @@
    "label": "Blood Group", 
    "options": "\nA+\nA-\nB+\nB-\nO+\nO-\nAB+\nAB-", 
    "read_only": 0, 
-   "reqd": 0
+   "reqd": 1
   }, 
   {
    "fieldname": "language_spoken_at_home", 
@@ -221,7 +221,7 @@
    "hidden": 0, 
    "label": "Language Spoken at Home", 
    "read_only": 0, 
-   "reqd": 0
+   "reqd": 1
   }, 
   {
    "fieldname": "previous_schooling", 
@@ -233,17 +233,36 @@
   }, 
   {
    "fieldname": "religion", 
-   "fieldtype": "Data", 
+   "fieldtype": "Select", 
    "hidden": 0, 
    "label": "Religion", 
+   "options": "Hindu\nJain\nMuslim\nChristian\nSikh\nParsi\nJew\nOthers", 
+   "read_only": 0, 
+   "reqd": 0
+  }, 
+  {
+   "fieldname": "religion_others", 
+   "fieldtype": "Data", 
+   "hidden": 0, 
+   "label": "Others", 
    "read_only": 0, 
    "reqd": 0
   }, 
   {
    "fieldname": "student_cast", 
+   "fieldtype": "Select", 
+   "hidden": 0, 
+   "label": "Cast", 
+   "options": "General\nSC\nST\nOBC\nOthers", 
+   "read_only": 0, 
+   "reqd": 1
+  }, 
+  {
+   "fieldname": "caste_others", 
    "fieldtype": "Data", 
    "hidden": 0, 
-   "label": "Caste", 
+   "label": "", 
+   "options": "", 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -299,7 +318,7 @@
    "fieldname": "mother_occupation", 
    "fieldtype": "Data", 
    "hidden": 0, 
-   "label": "Occupation", 
+   "label": "Occupation & Designation", 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -378,7 +397,7 @@
    "fieldname": "father_occupation", 
    "fieldtype": "Data", 
    "hidden": 0, 
-   "label": "Occupation", 
+   "label": "Occupation & Designation", 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -434,7 +453,7 @@
    "hidden": 0, 
    "label": "Why is Shishuvan a choice for your child ?", 
    "read_only": 0, 
-   "reqd": 0
+   "reqd": 1
   }, 
   {
    "fieldname": "ideal_partnership", 
@@ -442,7 +461,7 @@
    "hidden": 0, 
    "label": "According to you, what is an ideal partnership between the school and parents, in the education of the child ?", 
    "read_only": 0, 
-   "reqd": 0
+   "reqd": 1
   }, 
   {
    "fieldname": "how_would_you_help", 
@@ -450,7 +469,7 @@
    "hidden": 0, 
    "label": "How would you like to help the school as parents ?", 
    "read_only": 0, 
-   "reqd": 0
+   "reqd": 1
   }, 
   {
    "fieldname": "heard_from", 
@@ -458,7 +477,7 @@
    "hidden": 0, 
    "label": "You heard about Shishuvan through ?", 
    "read_only": 0, 
-   "reqd": 0
+   "reqd": 1
   }, 
   {
    "fieldtype": "Page Break", 
@@ -480,7 +499,7 @@
    "hidden": 0, 
    "label": "Birth Certificate", 
    "read_only": 0, 
-   "reqd": 0
+   "reqd": 1
   }, 
   {
    "fieldname": "vaccination_record_attached", 
@@ -535,7 +554,7 @@
    "label": "Family - Extended/Nuclear/Single Parent", 
    "options": "Extended\nNuclear\nSingle Parent", 
    "read_only": 0, 
-   "reqd": 0
+   "reqd": 1
   }, 
   {
    "fieldname": "is_the_child_adopted", 
@@ -551,7 +570,7 @@
    "hidden": 0, 
    "label": "Mother's age at the time of child's birth/ adoption", 
    "read_only": 0, 
-   "reqd": 0
+   "reqd": 1
   }, 
   {
    "fieldname": "fatherss_age_at_the_time_of_birth", 
@@ -559,32 +578,7 @@
    "hidden": 0, 
    "label": "Fathers's age at time of child's birth/ adoption", 
    "read_only": 0, 
-   "reqd": 0
-  }, 
-  {
-   "fieldname": "number_of_siblings", 
-   "fieldtype": "Data", 
-   "hidden": 0, 
-   "label": "Number of siblings", 
-   "read_only": 0, 
-   "reqd": 0
-  }, 
-  {
-   "fieldname": "your_child_is_the_eldest", 
-   "fieldtype": "Select", 
-   "hidden": 0, 
-   "label": "Your child is the Eldest / Middle / Youngest", 
-   "options": "Eldest\nMiddle\nYoungest", 
-   "read_only": 0, 
-   "reqd": 0
-  }, 
-  {
-   "fieldname": "age_of_siblings", 
-   "fieldtype": "Data", 
-   "hidden": 0, 
-   "label": "Age of siblings", 
-   "read_only": 0, 
-   "reqd": 0
+   "reqd": 1
   }, 
   {
    "fieldtype": "Section Break", 
@@ -669,7 +663,7 @@
    "hidden": 0, 
    "label": "Describe childs general behaviour during the neonatal period (first four weeks)", 
    "read_only": 0, 
-   "reqd": 0
+   "reqd": 1
   }, 
   {
    "fieldname": "first_paediatric_visit", 
@@ -677,7 +671,7 @@
    "hidden": 0, 
    "label": "When did your child have his/her first paediatric visit ? Name & address of the paediatrician/family doctor.", 
    "read_only": 0, 
-   "reqd": 0
+   "reqd": 1
   }, 
   {
    "fieldname": "how_frequent_are_the_doctors_visits_now", 
@@ -685,7 +679,7 @@
    "hidden": 0, 
    "label": "How frequent are the doctors visits now", 
    "read_only": 0, 
-   "reqd": 0
+   "reqd": 1
   }, 
   {
    "fieldtype": "Section Break", 
@@ -860,7 +854,7 @@
    "hidden": 0, 
    "label": "Has your child ever been hospitalized after birth till now ? Describe the circumstance.", 
    "read_only": 0, 
-   "reqd": 0
+   "reqd": 1
   }, 
   {
    "fieldname": "does_your_child_have_any_chronic_or_debilitating_illness", 
@@ -868,7 +862,7 @@
    "hidden": 0, 
    "label": "Does your child have any chronic or debilitating illness", 
    "read_only": 0, 
-   "reqd": 0
+   "reqd": 1
   }, 
   {
    "fieldname": "is_your_child_currently_under_any_kind_of_medication_", 
@@ -876,7 +870,7 @@
    "hidden": 0, 
    "label": "Is your child currently under any kind of medication ", 
    "read_only": 0, 
-   "reqd": 0
+   "reqd": 1
   }, 
   {
    "fieldname": "does_your_child_have_any_allergies", 
@@ -884,7 +878,7 @@
    "hidden": 0, 
    "label": "Does your child have any allergies", 
    "read_only": 0, 
-   "reqd": 0
+   "reqd": 1
   }, 
   {
    "fieldname": "does_your_child_have_any_disablities", 
@@ -892,7 +886,7 @@
    "hidden": 0, 
    "label": "Does your child have any disablities", 
    "read_only": 0, 
-   "reqd": 0
+   "reqd": 1
   }, 
   {
    "fieldtype": "Page Break", 
@@ -911,10 +905,26 @@
    "reqd": 0
   }, 
   {
+   "fieldname": "check_held_head_steady", 
+   "fieldtype": "Check", 
+   "hidden": 0, 
+   "label": "Held head steady", 
+   "read_only": 0, 
+   "reqd": 0
+  }, 
+  {
    "fieldname": "held_head_steady", 
    "fieldtype": "Data", 
    "hidden": 0, 
    "label": "Held head steady", 
+   "read_only": 0, 
+   "reqd": 0
+  }, 
+  {
+   "fieldname": "check_could_walk_independendently", 
+   "fieldtype": "Check", 
+   "hidden": 0, 
+   "label": "Could walk independendently", 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -927,6 +937,14 @@
    "reqd": 0
   }, 
   {
+   "fieldname": "check_pulled_toys_along_while_walking", 
+   "fieldtype": "Check", 
+   "hidden": 0, 
+   "label": "Pulled toys along, while walking", 
+   "read_only": 0, 
+   "reqd": 0
+  }, 
+  {
    "fieldname": "pulled_toys_along_while_walking", 
    "fieldtype": "Data", 
    "hidden": 0, 
@@ -935,10 +953,26 @@
    "reqd": 0
   }, 
   {
+   "fieldname": "check_could_feed_self_with_or_without_a_spoon", 
+   "fieldtype": "Check", 
+   "hidden": 0, 
+   "label": "Could feed self with or without a spoon", 
+   "read_only": 0, 
+   "reqd": 0
+  }, 
+  {
    "fieldname": "could_feed_self_with_or_without_a_soppn", 
    "fieldtype": "Data", 
    "hidden": 0, 
-   "label": "Could feed self with or without a soppn", 
+   "label": "Could feed self with or without a spoon", 
+   "read_only": 0, 
+   "reqd": 0
+  }, 
+  {
+   "fieldname": "check_recognized", 
+   "fieldtype": "Check", 
+   "hidden": 0, 
+   "label": "Recognized the names of familiar people object and body parts", 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -951,10 +985,26 @@
    "reqd": 0
   }, 
   {
+   "fieldname": "check_spoke_word_sentences", 
+   "fieldtype": "Check", 
+   "hidden": 0, 
+   "label": "Spoke 2 to 4 word sentences", 
+   "read_only": 0, 
+   "reqd": 0
+  }, 
+  {
    "fieldname": "spoke_word_sentences", 
    "fieldtype": "Data", 
    "hidden": 0, 
    "label": "Spoke 2 to 4 word sentences", 
+   "read_only": 0, 
+   "reqd": 0
+  }, 
+  {
+   "fieldname": "check_followed_simple_instructions", 
+   "fieldtype": "Check", 
+   "hidden": 0, 
+   "label": "Followed simple instructions", 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -967,10 +1017,26 @@
    "reqd": 0
   }, 
   {
+   "fieldname": "check_sorted_shapes", 
+   "fieldtype": "Check", 
+   "hidden": 0, 
+   "label": "Sorted shapes", 
+   "read_only": 0, 
+   "reqd": 0
+  }, 
+  {
    "fieldname": "sorted_shapes", 
    "fieldtype": "Data", 
    "hidden": 0, 
    "label": "Sorted shapes", 
+   "read_only": 0, 
+   "reqd": 0
+  }, 
+  {
+   "fieldname": "check_cooperated_with_dressing", 
+   "fieldtype": "Check", 
+   "hidden": 0, 
+   "label": "Cooperated with dressing", 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -983,10 +1049,26 @@
    "reqd": 0
   }, 
   {
+   "fieldname": "check_repeated_words", 
+   "fieldtype": "Check", 
+   "hidden": 0, 
+   "label": "Repeated words spoken to him / her", 
+   "read_only": 0, 
+   "reqd": 0
+  }, 
+  {
    "fieldname": "repeated_words_spoken_to_him", 
    "fieldtype": "Data", 
    "hidden": 0, 
    "label": "Repeated words spoken to him / her", 
+   "read_only": 0, 
+   "reqd": 0
+  }, 
+  {
+   "fieldname": "check_toiled_trained", 
+   "fieldtype": "Check", 
+   "hidden": 0, 
+   "label": "Toiled trained", 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -999,10 +1081,26 @@
    "reqd": 0
   }, 
   {
+   "fieldname": "check_smiled", 
+   "fieldtype": "Check", 
+   "hidden": 0, 
+   "label": "Smiled at familiar faces", 
+   "read_only": 0, 
+   "reqd": 0
+  }, 
+  {
    "fieldname": "smiled_at_familiar_faces", 
    "fieldtype": "Data", 
    "hidden": 0, 
    "label": "Smiled at familiar faces", 
+   "read_only": 0, 
+   "reqd": 0
+  }, 
+  {
+   "fieldname": "check_shared", 
+   "fieldtype": "Check", 
+   "hidden": 0, 
+   "label": "Shared his / her toys with others", 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -1202,7 +1300,7 @@
    "hidden": 0, 
    "label": "Eating Habits", 
    "read_only": 0, 
-   "reqd": 0
+   "reqd": 1
   }, 
   {
    "fieldname": "number_of_hours_your_child_watches_tv_everyday", 
@@ -1210,7 +1308,7 @@
    "hidden": 0, 
    "label": "Number of hours your child watches TV everyday", 
    "read_only": 0, 
-   "reqd": 0
+   "reqd": 1
   }, 
   {
    "fieldname": "favourite_programmes_on_tv", 
@@ -1218,7 +1316,7 @@
    "hidden": 0, 
    "label": "Favourite Programmes on TV", 
    "read_only": 0, 
-   "reqd": 0
+   "reqd": 1
   }, 
   {
    "fieldname": "with_which_adult_does_your_child_spend_most_of_the_time", 
@@ -1227,7 +1325,7 @@
    "label": "With which Adult does your child spend most of the time", 
    "options": "Mother\nFather\nGrandmother\nGrandfather\nDomestic Help\nOthers", 
    "read_only": 0, 
-   "reqd": 0
+   "reqd": 1
   }, 
   {
    "fieldname": "does_your_child_have_opportunities_to_play_with_other_children", 
@@ -1309,7 +1407,7 @@
    "hidden": 0, 
    "label": "Question 1", 
    "read_only": 0, 
-   "reqd": 0
+   "reqd": 1
   }, 
   {
    "description": "You are aware that Shishuvan's structure is non-competitive (no exams until class 7, no ranking, no comparison of students). After passing out from such a school how do you see your child meeting the challenges of today's highly competitive driven world ?", 
@@ -1318,7 +1416,7 @@
    "hidden": 0, 
    "label": "Question 2", 
    "read_only": 0, 
-   "reqd": 0
+   "reqd": 1
   }, 
   {
    "description": "Some children take time to settle in the school. We would like the first experience of the school to be gentle and comfortable for him/her. If your child takes time to settle in, would you or a family member be able to spend time in the school with him/her as long as it takes(if no, please explain why, giving reasons.)", 
@@ -1327,7 +1425,7 @@
    "hidden": 0, 
    "label": "Question 3", 
    "read_only": 0, 
-   "reqd": 0
+   "reqd": 1
   }, 
   {
    "description": "When applications exceed the number of seats available, what criteria should the school apply for selection that are considered just and fair by all ?", 
@@ -1336,7 +1434,7 @@
    "hidden": 0, 
    "label": "Question 4", 
    "read_only": 0, 
-   "reqd": 0
+   "reqd": 1
   }
  ]
 }

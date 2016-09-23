@@ -4,16 +4,19 @@
 
 from __future__ import unicode_literals
 import frappe
-from frappe.utils import cint
+import datetime
+from frappe.utils import cint, getdate, comma_and
+from dateutil.relativedelta import relativedelta
 
 def validate_student_applicant(doc, method):
 	validate_admission_age_criteria(doc, method)
 	validate_text_size(doc, method)
 	validate_milestones(doc, method)
+	validate_sibling_info(doc, method)
 	
 def validate_admission_age_criteria(doc, method):
 	if doc.program=="Nursery":
-		if (doc.date_of_birth < "2013-09-01" or doc.date_of_birth > "2014-08-31"):
+		if (getdate(doc.date_of_birth) < getdate("2013-09-01") or getdate(doc.date_of_birth) > getdate("2014-08-31")):
 			frappe.throw("Student Applicant does not meet age criteria")
 
 def validate_text_size(doc, method):
@@ -30,3 +33,20 @@ def validate_milestones(doc, method):
 		"repeated_words_spoken_to_him", "toiled_trained", "smiled_at_familiar_faces", "shared_his_toys_with_others"]:
 			if cint(doc.get(field)) > 36:
 				frappe.throw("{0} Milestone age cannot be greater than 36 Months".format(field))
+
+def validate_sibling_info(doc, method):
+	if doc.siblings:
+		doc.number_of_siblings = len(doc.siblings)
+		sibling_age = []
+		for sibling in doc.siblings:
+			sibling_age.append(relativedelta(datetime.date.today(), getdate(sibling.date_of_birth)).years)
+		doc.age_of_siblings = comma_and(sibling_age)
+		child_age = relativedelta(datetime.date.today(), getdate(doc.date_of_birth)).years
+		if not any(age> child_age for age in sibling_age):
+			doc.your_child_is_the_eldest = "Eldest"
+		elif not any(age< child_age for age in sibling_age):
+			doc.your_child_is_the_eldest = "Youngest"
+		else:
+			doc.your_child_is_the_eldest = "Middle"
+			
+			
