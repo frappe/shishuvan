@@ -1,9 +1,12 @@
 {
+ "accept_payment": 1, 
  "allow_comments": 0, 
  "allow_delete": 0, 
  "allow_edit": 1, 
  "allow_multiple": 1, 
+ "amount": 1000.0, 
  "creation": "2016-09-19 07:32:15.027038", 
+ "currency": "INR", 
  "doc_type": "Student Applicant", 
  "docstatus": 0, 
  "doctype": "Web Form", 
@@ -11,18 +14,21 @@
  "introduction_text": "Application for Admission", 
  "is_standard": 1, 
  "login_required": 1, 
- "modified": "2016-09-23 13:04:58.718980", 
+ "modified": "2016-09-24 05:44:06.863636", 
  "modified_by": "Administrator", 
  "module": "Shishuvan", 
  "name": "nursery-admission-form", 
  "owner": "Administrator", 
+ "payment_button_help": "Your application will not be accepted unless you make the payment. Once you make a payment you will not be able to change the application.", 
+ "payment_button_label": "Make Payment", 
+ "payment_gateway": "Razorpay", 
  "published": 1, 
  "route": "nursery-admission-form", 
+ "show_sidebar": 1, 
  "sidebar_items": [
   {
    "enabled": 1, 
    "route": "/nursery-admission-form", 
-   "show_always": 0, 
    "title": "My Applications"
   }
  ], 
@@ -1435,6 +1441,19 @@
    "label": "Question 4", 
    "read_only": 0, 
    "reqd": 1
+  }, 
+  {
+   "fieldtype": "Page Break", 
+   "hidden": 0, 
+   "label": "Payment", 
+   "read_only": 0, 
+   "reqd": 0
+  }, 
+  {
+   "fieldtype": "HTML", 
+   "hidden": 0, 
+   "read_only": 0, 
+   "reqd": 0
   }
  ]
 }
