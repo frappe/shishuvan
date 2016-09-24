@@ -3,6 +3,7 @@
  "allow_comments": 0, 
  "allow_delete": 0, 
  "allow_edit": 1, 
+ "allow_incomplete": 0, 
  "allow_multiple": 1, 
  "amount": 1000.0, 
  "creation": "2016-09-19 07:32:15.027038", 
@@ -14,7 +15,7 @@
  "introduction_text": "Application for Admission to Shishuvan Nursery Batch 2017-18.", 
  "is_standard": 1, 
  "login_required": 1, 
- "modified": "2016-09-24 06:24:25.484731", 
+ "modified": "2016-09-24 07:56:14.051947", 
  "modified_by": "Administrator", 
  "module": "Shishuvan", 
  "name": "nursery-admission-form", 
@@ -251,7 +252,7 @@
    "fieldname": "religion_others", 
    "fieldtype": "Data", 
    "hidden": 0, 
-   "label": "Others", 
+   "label": "Religion (if other)", 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -259,7 +260,7 @@
    "fieldname": "student_cast", 
    "fieldtype": "Select", 
    "hidden": 0, 
-   "label": "Cast", 
+   "label": "Caste", 
    "options": "General\nSC\nST\nOBC\nOthers", 
    "read_only": 0, 
    "reqd": 1
@@ -268,7 +269,7 @@
    "fieldname": "caste_others", 
    "fieldtype": "Data", 
    "hidden": 0, 
-   "label": "", 
+   "label": "Caste (if other)", 
    "options": "", 
    "read_only": 0, 
    "reqd": 0
