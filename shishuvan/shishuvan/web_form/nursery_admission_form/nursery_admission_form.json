@@ -14,7 +14,7 @@
  "introduction_text": "Application for Admission to Shishuvan Nursery Batch 2017-18.", 
  "is_standard": 1, 
  "login_required": 1, 
- "modified": "2016-09-24 06:11:48.753450", 
+ "modified": "2016-09-24 06:24:25.484731", 
  "modified_by": "Administrator", 
  "module": "Shishuvan", 
  "name": "nursery-admission-form", 
@@ -65,6 +65,7 @@
    "reqd": 1
   }, 
   {
+   "description": "Date of birth must be between 1st Sept 2013 and 31st August 2014", 
    "fieldname": "date_of_birth", 
    "fieldtype": "Date", 
    "hidden": 0, 
@@ -922,7 +923,7 @@
    "fieldname": "held_head_steady", 
    "fieldtype": "Data", 
    "hidden": 0, 
-   "label": "Held head steady", 
+   "label": "Held head steady at month", 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -938,7 +939,7 @@
    "fieldname": "could_walk_independendently", 
    "fieldtype": "Data", 
    "hidden": 0, 
-   "label": "Could walk independendently", 
+   "label": "Could walk independendently at month", 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -954,7 +955,7 @@
    "fieldname": "pulled_toys_along_while_walking", 
    "fieldtype": "Data", 
    "hidden": 0, 
-   "label": "Pulled toys along, while walking", 
+   "label": "Pulled toys along, while walking at month", 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -970,7 +971,7 @@
    "fieldname": "could_feed_self_with_or_without_a_soppn", 
    "fieldtype": "Data", 
    "hidden": 0, 
-   "label": "Could feed self with or without a spoon", 
+   "label": "Could feed self with or without a spoon at month", 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -986,7 +987,7 @@
    "fieldname": "recognized_the_names_of_familiar_people_object_and_body_parts", 
    "fieldtype": "Data", 
    "hidden": 0, 
-   "label": "Recognized the names of familiar people object and body parts", 
+   "label": "Recognized the names of familiar people object and body parts at month", 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -1002,7 +1003,7 @@
    "fieldname": "spoke_word_sentences", 
    "fieldtype": "Data", 
    "hidden": 0, 
-   "label": "Spoke 2 to 4 word sentences", 
+   "label": "Spoke 2 to 4 word sentences at month", 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -1018,7 +1019,7 @@
    "fieldname": "followed_simple_instructions", 
    "fieldtype": "Data", 
    "hidden": 0, 
-   "label": "Followed simple instructions", 
+   "label": "Followed simple instructions at month", 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -1034,7 +1035,7 @@
    "fieldname": "sorted_shapes", 
    "fieldtype": "Data", 
    "hidden": 0, 
-   "label": "Sorted shapes", 
+   "label": "Sorted shapes at month", 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -1050,7 +1051,7 @@
    "fieldname": "cooperated_with_dressing", 
    "fieldtype": "Data", 
    "hidden": 0, 
-   "label": "Cooperated with dressing", 
+   "label": "Cooperated with dressing at month", 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -1066,7 +1067,7 @@
    "fieldname": "repeated_words_spoken_to_him", 
    "fieldtype": "Data", 
    "hidden": 0, 
-   "label": "Repeated words spoken to him / her", 
+   "label": "Repeated words spoken to him / her at month", 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -1082,7 +1083,7 @@
    "fieldname": "toiled_trained", 
    "fieldtype": "Data", 
    "hidden": 0, 
-   "label": "Toiled trained", 
+   "label": "Toiled trained at month", 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -1098,7 +1099,7 @@
    "fieldname": "smiled_at_familiar_faces", 
    "fieldtype": "Data", 
    "hidden": 0, 
-   "label": "Smiled at familiar faces", 
+   "label": "Smiled at familiar faces at month", 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -1114,7 +1115,7 @@
    "fieldname": "shared_his_toys_with_others", 
    "fieldtype": "Data", 
    "hidden": 0, 
-   "label": "Shared his / her toys with others", 
+   "label": "Shared his / her toys with others at month", 
    "read_only": 0, 
    "reqd": 0
   }, 
