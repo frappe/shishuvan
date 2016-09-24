@@ -16,6 +16,10 @@ doc_events = {
 		"validate": "shishuvan.customization.validate_student_applicant"
 	}
 }
+
+website_context = {
+	"favicon": 	'/assets/shishuvan/images/shishuvan-logo.png'
+}
 # Includes in <head>
 # ------------------
 
