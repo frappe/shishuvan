@@ -11,10 +11,10 @@
  "docstatus": 0, 
  "doctype": "Web Form", 
  "idx": 0, 
- "introduction_text": "Application for Admission", 
+ "introduction_text": "Application for Admission to Shishuvan Nursery Batch 2017-18.", 
  "is_standard": 1, 
  "login_required": 1, 
- "modified": "2016-09-24 05:44:06.863636", 
+ "modified": "2016-09-24 06:11:48.753450", 
  "modified_by": "Administrator", 
  "module": "Shishuvan", 
  "name": "nursery-admission-form", 
@@ -33,7 +33,7 @@
   }
  ], 
  "success_url": "/nursery-admission-form", 
- "title": "Nursery Admission Form", 
+ "title": "Nursery Admission Application", 
  "web_form_fields": [
   {
    "fieldname": "", 
