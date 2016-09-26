@@ -15,7 +15,7 @@
  "introduction_text": "Application for Admission to Shishuvan Nursery Batch 2017-18.", 
  "is_standard": 1, 
  "login_required": 1, 
- "modified": "2016-09-24 07:56:14.051947", 
+ "modified": "2016-09-26 07:26:23.182547", 
  "modified_by": "Administrator", 
  "module": "Shishuvan", 
  "name": "nursery-admission-form", 
@@ -26,13 +26,7 @@
  "published": 1, 
  "route": "nursery-admission-form", 
  "show_sidebar": 1, 
- "sidebar_items": [
-  {
-   "enabled": 1, 
-   "route": "/nursery-admission-form", 
-   "title": "My Applications"
-  }
- ], 
+ "sidebar_items": [], 
  "success_url": "/nursery-admission-form", 
  "title": "Nursery Admission Application", 
  "web_form_fields": [
@@ -41,6 +35,8 @@
    "fieldtype": "Page Break", 
    "hidden": 0, 
    "label": "Student Details", 
+   "max_length": 0, 
+   "max_value": 0, 
    "options": "", 
    "read_only": 0, 
    "reqd": 1
@@ -51,6 +47,8 @@
    "fieldtype": "Link", 
    "hidden": 0, 
    "label": "Seeking Admission In", 
+   "max_length": 0, 
+   "max_value": 0, 
    "options": "Program", 
    "read_only": 1, 
    "reqd": 1
@@ -61,6 +59,8 @@
    "fieldtype": "Link", 
    "hidden": 0, 
    "label": "Academic Year", 
+   "max_length": 0, 
+   "max_value": 0, 
    "options": "Academic Year", 
    "read_only": 1, 
    "reqd": 1
@@ -71,6 +71,8 @@
    "fieldtype": "Date", 
    "hidden": 0, 
    "label": "Date of Birth", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 1
   }, 
@@ -79,6 +81,8 @@
    "fieldtype": "Data", 
    "hidden": 0, 
    "label": "First Name", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 1
   }, 
@@ -87,6 +91,8 @@
    "fieldtype": "Data", 
    "hidden": 0, 
    "label": "Middle Name", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -95,6 +101,8 @@
    "fieldtype": "Data", 
    "hidden": 0, 
    "label": "Last Name", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -103,6 +111,8 @@
    "fieldtype": "Attach", 
    "hidden": 0, 
    "label": "Image", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 1
   }, 
@@ -111,6 +121,8 @@
    "fieldtype": "Select", 
    "hidden": 0, 
    "label": "Gender", 
+   "max_length": 0, 
+   "max_value": 0, 
    "options": "\nMale\nFemale", 
    "read_only": 0, 
    "reqd": 1
@@ -120,6 +132,8 @@
    "fieldtype": "Data", 
    "hidden": 0, 
    "label": "Birth Registration Number", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 1
   }, 
@@ -128,6 +142,8 @@
    "fieldtype": "Page Break", 
    "hidden": 0, 
    "label": "Address Details", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -136,6 +152,8 @@
    "fieldtype": "Data", 
    "hidden": 0, 
    "label": "Address Line 1", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 1
   }, 
@@ -144,6 +162,8 @@
    "fieldtype": "Data", 
    "hidden": 0, 
    "label": "Address Line 2", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 1
   }, 
@@ -152,6 +172,8 @@
    "fieldtype": "Data", 
    "hidden": 0, 
    "label": "Area", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 1
   }, 
@@ -160,6 +182,8 @@
    "fieldtype": "Data", 
    "hidden": 0, 
    "label": "City", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 1
   }, 
@@ -168,14 +192,18 @@
    "fieldtype": "Data", 
    "hidden": 0, 
    "label": "State", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 1
   }, 
   {
    "fieldname": "pincode", 
-   "fieldtype": "Data", 
+   "fieldtype": "Int", 
    "hidden": 0, 
    "label": "Pincode", 
+   "max_length": 6, 
+   "max_value": 999999, 
    "read_only": 0, 
    "reqd": 1
   }, 
@@ -184,6 +212,8 @@
    "fieldtype": "Page Break", 
    "hidden": 0, 
    "label": "Personal Details", 
+   "max_length": 0, 
+   "max_value": 0, 
    "options": "", 
    "read_only": 0, 
    "reqd": 0
@@ -193,6 +223,8 @@
    "fieldtype": "Data", 
    "hidden": 0, 
    "label": "Native Place", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 1
   }, 
@@ -201,6 +233,8 @@
    "fieldtype": "Data", 
    "hidden": 0, 
    "label": "Village", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 1
   }, 
@@ -210,6 +244,8 @@
    "fieldtype": "Link", 
    "hidden": 0, 
    "label": "Nationality", 
+   "max_length": 0, 
+   "max_value": 0, 
    "options": "Country", 
    "read_only": 0, 
    "reqd": 1
@@ -219,6 +255,8 @@
    "fieldtype": "Select", 
    "hidden": 0, 
    "label": "Blood Group", 
+   "max_length": 0, 
+   "max_value": 0, 
    "options": "\nA+\nA-\nB+\nB-\nO+\nO-\nAB+\nAB-", 
    "read_only": 0, 
    "reqd": 1
@@ -228,6 +266,8 @@
    "fieldtype": "Data", 
    "hidden": 0, 
    "label": "Language Spoken at Home", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 1
   }, 
@@ -236,6 +276,8 @@
    "fieldtype": "Data", 
    "hidden": 0, 
    "label": "Previous Schooling", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -244,6 +286,8 @@
    "fieldtype": "Select", 
    "hidden": 0, 
    "label": "Religion", 
+   "max_length": 0, 
+   "max_value": 0, 
    "options": "Hindu\nJain\nMuslim\nChristian\nSikh\nParsi\nJew\nOthers", 
    "read_only": 0, 
    "reqd": 0
@@ -253,6 +297,8 @@
    "fieldtype": "Data", 
    "hidden": 0, 
    "label": "Religion (if other)", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -261,6 +307,8 @@
    "fieldtype": "Select", 
    "hidden": 0, 
    "label": "Caste", 
+   "max_length": 0, 
+   "max_value": 0, 
    "options": "General\nSC\nST\nOBC\nOthers", 
    "read_only": 0, 
    "reqd": 1
@@ -270,6 +318,8 @@
    "fieldtype": "Data", 
    "hidden": 0, 
    "label": "Caste (if other)", 
+   "max_length": 0, 
+   "max_value": 0, 
    "options": "", 
    "read_only": 0, 
    "reqd": 0
@@ -279,6 +329,8 @@
    "fieldtype": "Table", 
    "hidden": 0, 
    "label": "Siblings", 
+   "max_length": 0, 
+   "max_value": 0, 
    "options": "Student Sibling", 
    "read_only": 0, 
    "reqd": 0
@@ -287,6 +339,8 @@
    "fieldtype": "Page Break", 
    "hidden": 0, 
    "label": "Mother's Details", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -295,6 +349,8 @@
    "fieldtype": "Data", 
    "hidden": 0, 
    "label": "Name", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -303,6 +359,8 @@
    "fieldtype": "Data", 
    "hidden": 0, 
    "label": "Age", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -311,6 +369,8 @@
    "fieldtype": "Data", 
    "hidden": 0, 
    "label": "Education", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -319,6 +379,8 @@
    "fieldtype": "Data", 
    "hidden": 0, 
    "label": "Name of College", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -327,6 +389,8 @@
    "fieldtype": "Data", 
    "hidden": 0, 
    "label": "Occupation & Designation", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -335,22 +399,28 @@
    "fieldtype": "Data", 
    "hidden": 0, 
    "label": "Work Address", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
   {
    "fieldname": "mother_landline_number", 
-   "fieldtype": "Data", 
+   "fieldtype": "Int", 
    "hidden": 0, 
    "label": "Landline Number", 
+   "max_length": 0, 
+   "max_value": 2147483647, 
    "read_only": 0, 
    "reqd": 0
   }, 
   {
    "fieldname": "mother_mobile_number", 
-   "fieldtype": "Data", 
+   "fieldtype": "Int", 
    "hidden": 0, 
    "label": "Mobile Number", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -359,6 +429,8 @@
    "fieldtype": "Data", 
    "hidden": 0, 
    "label": "Email ID", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -366,6 +438,8 @@
    "fieldtype": "Page Break", 
    "hidden": 0, 
    "label": "Father's Details", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -374,14 +448,18 @@
    "fieldtype": "Data", 
    "hidden": 0, 
    "label": "Name", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
   {
    "fieldname": "father_age", 
-   "fieldtype": "Data", 
+   "fieldtype": "Int", 
    "hidden": 0, 
    "label": "Age", 
+   "max_length": 0, 
+   "max_value": 99, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -390,6 +468,8 @@
    "fieldtype": "Data", 
    "hidden": 0, 
    "label": "Education", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -398,6 +478,8 @@
    "fieldtype": "Data", 
    "hidden": 0, 
    "label": "Name of College", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -406,6 +488,8 @@
    "fieldtype": "Data", 
    "hidden": 0, 
    "label": "Occupation & Designation", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -414,22 +498,28 @@
    "fieldtype": "Data", 
    "hidden": 0, 
    "label": "Work Address", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
   {
    "fieldname": "father_landline_number", 
-   "fieldtype": "Data", 
+   "fieldtype": "Int", 
    "hidden": 0, 
    "label": "Landline Number", 
+   "max_length": 0, 
+   "max_value": 2147483647, 
    "read_only": 0, 
    "reqd": 0
   }, 
   {
    "fieldname": "father_mobile_number", 
-   "fieldtype": "Data", 
+   "fieldtype": "Int", 
    "hidden": 0, 
    "label": "Mobile Number", 
+   "max_length": 0, 
+   "max_value": 2147483647, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -438,6 +528,8 @@
    "fieldtype": "Data", 
    "hidden": 0, 
    "label": "Email ID", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -445,6 +537,8 @@
    "fieldtype": "Page Break", 
    "hidden": 0, 
    "label": "Why Shishuvan", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -452,6 +546,8 @@
    "fieldtype": "Section Break", 
    "hidden": 0, 
    "label": "We would like to know your views on Education", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -460,6 +556,8 @@
    "fieldtype": "Text", 
    "hidden": 0, 
    "label": "Why is Shishuvan a choice for your child ?", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 1
   }, 
@@ -468,6 +566,8 @@
    "fieldtype": "Text", 
    "hidden": 0, 
    "label": "According to you, what is an ideal partnership between the school and parents, in the education of the child ?", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 1
   }, 
@@ -476,6 +576,8 @@
    "fieldtype": "Text", 
    "hidden": 0, 
    "label": "How would you like to help the school as parents ?", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 1
   }, 
@@ -484,6 +586,8 @@
    "fieldtype": "Data", 
    "hidden": 0, 
    "label": "You heard about Shishuvan through ?", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 1
   }, 
@@ -491,6 +595,8 @@
    "fieldtype": "Page Break", 
    "hidden": 0, 
    "label": "Attachments", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -498,6 +604,8 @@
    "fieldtype": "Section Break", 
    "hidden": 0, 
    "label": "Please attach the following Documents", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -506,6 +614,8 @@
    "fieldtype": "Attach", 
    "hidden": 0, 
    "label": "Birth Certificate", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 1
   }, 
@@ -514,6 +624,8 @@
    "fieldtype": "Attach", 
    "hidden": 0, 
    "label": "Vaccination Record Attached", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -522,6 +634,8 @@
    "fieldtype": "Attach", 
    "hidden": 0, 
    "label": "Minority Caste Certificate (if applicable)", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -530,6 +644,8 @@
    "fieldtype": "Attach", 
    "hidden": 0, 
    "label": "Mother's Educational Certificates", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -538,6 +654,8 @@
    "fieldtype": "Attach", 
    "hidden": 0, 
    "label": "Father's Educational Certificates", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -545,6 +663,8 @@
    "fieldtype": "Page Break", 
    "hidden": 0, 
    "label": "Child Health History", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -552,6 +672,8 @@
    "fieldtype": "Section Break", 
    "hidden": 0, 
    "label": "General Information", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -560,6 +682,8 @@
    "fieldtype": "Select", 
    "hidden": 0, 
    "label": "Family - Extended/Nuclear/Single Parent", 
+   "max_length": 0, 
+   "max_value": 0, 
    "options": "Extended\nNuclear\nSingle Parent", 
    "read_only": 0, 
    "reqd": 1
@@ -569,22 +693,28 @@
    "fieldtype": "Check", 
    "hidden": 0, 
    "label": "Is the child adopted", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
   {
    "fieldname": "mothers_age_at_the_time_of_birth", 
-   "fieldtype": "Data", 
+   "fieldtype": "Int", 
    "hidden": 0, 
    "label": "Mother's age at the time of child's birth/ adoption", 
+   "max_length": 0, 
+   "max_value": 99, 
    "read_only": 0, 
    "reqd": 1
   }, 
   {
    "fieldname": "fatherss_age_at_the_time_of_birth", 
-   "fieldtype": "Data", 
+   "fieldtype": "Int", 
    "hidden": 0, 
    "label": "Fathers's age at time of child's birth/ adoption", 
+   "max_length": 0, 
+   "max_value": 99, 
    "read_only": 0, 
    "reqd": 1
   }, 
@@ -592,6 +722,8 @@
    "fieldtype": "Section Break", 
    "hidden": 0, 
    "label": "Pregnancy Details", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -600,6 +732,8 @@
    "fieldtype": "Data", 
    "hidden": 0, 
    "label": "Type of delivery", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -608,6 +742,8 @@
    "fieldtype": "Text", 
    "hidden": 0, 
    "label": "Any complications or medication taken during the pregnancy", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -616,6 +752,8 @@
    "fieldtype": "Data", 
    "hidden": 0, 
    "label": "Number of previous pregnancies", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -624,6 +762,8 @@
    "fieldtype": "Text", 
    "hidden": 0, 
    "label": "Child's health at birth (describe any health problems.)", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -632,6 +772,8 @@
    "fieldtype": "Check", 
    "hidden": 0, 
    "label": "Was the infant hospitalized", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -640,6 +782,8 @@
    "fieldtype": "Text", 
    "hidden": 0, 
    "label": "if yes please describe the reasons", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -648,6 +792,8 @@
    "fieldtype": "Check", 
    "hidden": 0, 
    "label": "Did the child cry immediately after birth (Birth cry)", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -655,6 +801,8 @@
    "fieldtype": "Page Break", 
    "hidden": 0, 
    "label": "Medical Details", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -662,6 +810,8 @@
    "fieldtype": "Section Break", 
    "hidden": 0, 
    "label": "Child's Medical Details", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -670,6 +820,8 @@
    "fieldtype": "Text", 
    "hidden": 0, 
    "label": "Describe childs general behaviour during the neonatal period (first four weeks)", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 1
   }, 
@@ -678,6 +830,8 @@
    "fieldtype": "Text", 
    "hidden": 0, 
    "label": "When did your child have his/her first paediatric visit ? Name & address of the paediatrician/family doctor.", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 1
   }, 
@@ -686,6 +840,8 @@
    "fieldtype": "Data", 
    "hidden": 0, 
    "label": "How frequent are the doctors visits now", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 1
   }, 
@@ -693,6 +849,8 @@
    "fieldtype": "Section Break", 
    "hidden": 0, 
    "label": "Tick if the child has any of the following illness", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -701,6 +859,8 @@
    "fieldtype": "Check", 
    "hidden": 0, 
    "label": "Colic", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -709,6 +869,8 @@
    "fieldtype": "Check", 
    "hidden": 0, 
    "label": "Flu", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -717,6 +879,8 @@
    "fieldtype": "Check", 
    "hidden": 0, 
    "label": "Scarlet Fever", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -725,6 +889,8 @@
    "fieldtype": "Check", 
    "hidden": 0, 
    "label": "Ear Infection", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -733,6 +899,8 @@
    "fieldtype": "Check", 
    "hidden": 0, 
    "label": "Chicken Pox", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -741,6 +909,8 @@
    "fieldtype": "Check", 
    "hidden": 0, 
    "label": "Mumps", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -749,6 +919,8 @@
    "fieldtype": "Check", 
    "hidden": 0, 
    "label": "Diarrhea", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -757,6 +929,8 @@
    "fieldtype": "Check", 
    "hidden": 0, 
    "label": "Headache Meningitis", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -765,6 +939,8 @@
    "fieldtype": "Column Break", 
    "hidden": 0, 
    "label": "", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -773,6 +949,8 @@
    "fieldtype": "Check", 
    "hidden": 0, 
    "label": "Cold Pneumonia", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -781,6 +959,8 @@
    "fieldtype": "Check", 
    "hidden": 0, 
    "label": "Measles", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -789,6 +969,8 @@
    "fieldtype": "Check", 
    "hidden": 0, 
    "label": "Stomach Virus", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -797,6 +979,8 @@
    "fieldtype": "Check", 
    "hidden": 0, 
    "label": "Rubella", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -805,6 +989,8 @@
    "fieldtype": "Check", 
    "hidden": 0, 
    "label": "Rheumatic Fever", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -813,6 +999,8 @@
    "fieldtype": "Check", 
    "hidden": 0, 
    "label": "Epileptic Fits Convulsions", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -821,6 +1009,8 @@
    "fieldtype": "Check", 
    "hidden": 0, 
    "label": "Adenoids Tonsilitis", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -829,6 +1019,8 @@
    "fieldtype": "Section Break", 
    "hidden": 0, 
    "label": "", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -837,6 +1029,8 @@
    "fieldtype": "Data", 
    "hidden": 0, 
    "label": "Other", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -845,6 +1039,8 @@
    "fieldtype": "Check", 
    "hidden": 0, 
    "label": "Has the child been through the required immunizations", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -853,6 +1049,8 @@
    "fieldtype": "Text", 
    "hidden": 0, 
    "label": "If not please mention why ?", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -861,6 +1059,8 @@
    "fieldtype": "Text", 
    "hidden": 0, 
    "label": "Has your child ever been hospitalized after birth till now ? Describe the circumstance.", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 1
   }, 
@@ -869,6 +1069,8 @@
    "fieldtype": "Text", 
    "hidden": 0, 
    "label": "Does your child have any chronic or debilitating illness", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 1
   }, 
@@ -877,6 +1079,8 @@
    "fieldtype": "Text", 
    "hidden": 0, 
    "label": "Is your child currently under any kind of medication ", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 1
   }, 
@@ -885,6 +1089,8 @@
    "fieldtype": "Text", 
    "hidden": 0, 
    "label": "Does your child have any allergies", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 1
   }, 
@@ -893,6 +1099,8 @@
    "fieldtype": "Text", 
    "hidden": 0, 
    "label": "Does your child have any disablities", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 1
   }, 
@@ -900,6 +1108,8 @@
    "fieldtype": "Page Break", 
    "hidden": 0, 
    "label": "Milestones", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -909,6 +1119,8 @@
    "fieldtype": "Section Break", 
    "hidden": 0, 
    "label": "Mention Age at which the following milestones were achieved (in Months)", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -917,6 +1129,8 @@
    "fieldtype": "Check", 
    "hidden": 0, 
    "label": "Held head steady", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -925,6 +1139,8 @@
    "fieldtype": "Data", 
    "hidden": 0, 
    "label": "Held head steady at month", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -933,6 +1149,8 @@
    "fieldtype": "Check", 
    "hidden": 0, 
    "label": "Could walk independendently", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -941,6 +1159,8 @@
    "fieldtype": "Data", 
    "hidden": 0, 
    "label": "Could walk independendently at month", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -949,6 +1169,8 @@
    "fieldtype": "Check", 
    "hidden": 0, 
    "label": "Pulled toys along, while walking", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -957,6 +1179,8 @@
    "fieldtype": "Data", 
    "hidden": 0, 
    "label": "Pulled toys along, while walking at month", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -965,6 +1189,8 @@
    "fieldtype": "Check", 
    "hidden": 0, 
    "label": "Could feed self with or without a spoon", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -973,6 +1199,8 @@
    "fieldtype": "Data", 
    "hidden": 0, 
    "label": "Could feed self with or without a spoon at month", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -981,6 +1209,8 @@
    "fieldtype": "Check", 
    "hidden": 0, 
    "label": "Recognized the names of familiar people object and body parts", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -989,6 +1219,8 @@
    "fieldtype": "Data", 
    "hidden": 0, 
    "label": "Recognized the names of familiar people object and body parts at month", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -997,6 +1229,8 @@
    "fieldtype": "Check", 
    "hidden": 0, 
    "label": "Spoke 2 to 4 word sentences", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -1005,6 +1239,8 @@
    "fieldtype": "Data", 
    "hidden": 0, 
    "label": "Spoke 2 to 4 word sentences at month", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -1013,6 +1249,8 @@
    "fieldtype": "Check", 
    "hidden": 0, 
    "label": "Followed simple instructions", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -1021,6 +1259,8 @@
    "fieldtype": "Data", 
    "hidden": 0, 
    "label": "Followed simple instructions at month", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -1029,6 +1269,8 @@
    "fieldtype": "Check", 
    "hidden": 0, 
    "label": "Sorted shapes", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -1037,6 +1279,8 @@
    "fieldtype": "Data", 
    "hidden": 0, 
    "label": "Sorted shapes at month", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -1045,6 +1289,8 @@
    "fieldtype": "Check", 
    "hidden": 0, 
    "label": "Cooperated with dressing", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -1053,6 +1299,8 @@
    "fieldtype": "Data", 
    "hidden": 0, 
    "label": "Cooperated with dressing at month", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -1061,6 +1309,8 @@
    "fieldtype": "Check", 
    "hidden": 0, 
    "label": "Repeated words spoken to him / her", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -1069,6 +1319,8 @@
    "fieldtype": "Data", 
    "hidden": 0, 
    "label": "Repeated words spoken to him / her at month", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -1077,6 +1329,8 @@
    "fieldtype": "Check", 
    "hidden": 0, 
    "label": "Toiled trained", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -1085,6 +1339,8 @@
    "fieldtype": "Data", 
    "hidden": 0, 
    "label": "Toiled trained at month", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -1093,6 +1349,8 @@
    "fieldtype": "Check", 
    "hidden": 0, 
    "label": "Smiled at familiar faces", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -1101,6 +1359,8 @@
    "fieldtype": "Data", 
    "hidden": 0, 
    "label": "Smiled at familiar faces at month", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -1109,6 +1369,8 @@
    "fieldtype": "Check", 
    "hidden": 0, 
    "label": "Shared his / her toys with others", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -1117,6 +1379,8 @@
    "fieldtype": "Data", 
    "hidden": 0, 
    "label": "Shared his / her toys with others at month", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -1125,6 +1389,8 @@
    "fieldtype": "Text", 
    "hidden": 0, 
    "label": "Do you as a parent have any concerns about your child", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -1132,6 +1398,8 @@
    "fieldtype": "Page Break", 
    "hidden": 0, 
    "label": "Behaviour", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -1140,6 +1408,8 @@
    "fieldtype": "Section Break", 
    "hidden": 0, 
    "label": "Family Details - Have any of the following situations mentioned below occurred in your household", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -1148,6 +1418,8 @@
    "fieldtype": "Check", 
    "hidden": 0, 
    "label": "Separation Divorce of Parents", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -1156,6 +1428,8 @@
    "fieldtype": "Check", 
    "hidden": 0, 
    "label": "Death of Family Member", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -1164,6 +1438,8 @@
    "fieldtype": "Check", 
    "hidden": 0, 
    "label": "Serious Illness of Family Member", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -1172,6 +1448,8 @@
    "fieldtype": "Check", 
    "hidden": 0, 
    "label": "Transition from Joint Family to Nuclear Family or Vice Versa", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -1180,6 +1458,8 @@
    "fieldtype": "Check", 
    "hidden": 0, 
    "label": "Move to new City or Home", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -1188,6 +1468,8 @@
    "fieldtype": "Check", 
    "hidden": 0, 
    "label": "Parents new Job", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -1196,6 +1478,8 @@
    "fieldtype": "Check", 
    "hidden": 0, 
    "label": "Death of a Pet", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -1204,6 +1488,8 @@
    "fieldtype": "Check", 
    "hidden": 0, 
    "label": "Birth of a Sibling", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -1212,6 +1498,8 @@
    "fieldtype": "Check", 
    "hidden": 0, 
    "label": "Exposure of Chronic arguments or fights", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -1220,6 +1508,8 @@
    "fieldtype": "Check", 
    "hidden": 0, 
    "label": "Other family detail", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -1228,6 +1518,8 @@
    "fieldtype": "Text", 
    "hidden": 0, 
    "label": "Any description of any of the above and when", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -1235,6 +1527,8 @@
    "fieldtype": "Section Break", 
    "hidden": 0, 
    "label": "Currently does your child exhibit any of the following behavioural / emotional attributes ?", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -1243,6 +1537,8 @@
    "fieldtype": "Check", 
    "hidden": 0, 
    "label": "Anger", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -1251,6 +1547,8 @@
    "fieldtype": "Check", 
    "hidden": 0, 
    "label": "Temper tantrums", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -1259,6 +1557,8 @@
    "fieldtype": "Check", 
    "hidden": 0, 
    "label": "Nail biting", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -1267,6 +1567,8 @@
    "fieldtype": "Check", 
    "hidden": 0, 
    "label": "Thumb Sucking", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -1275,6 +1577,8 @@
    "fieldtype": "Check", 
    "hidden": 0, 
    "label": "Hitting Bitting", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -1283,6 +1587,8 @@
    "fieldtype": "Check", 
    "hidden": 0, 
    "label": "Nightmares Bedwetting", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -1291,6 +1597,8 @@
    "fieldtype": "Data", 
    "hidden": 0, 
    "label": "Fear Of", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -1299,6 +1607,8 @@
    "fieldtype": "Data", 
    "hidden": 0, 
    "label": "Any Other emotions", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -1307,6 +1617,8 @@
    "fieldtype": "Text", 
    "hidden": 0, 
    "label": "Eating Habits", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 1
   }, 
@@ -1315,6 +1627,8 @@
    "fieldtype": "Data", 
    "hidden": 0, 
    "label": "Number of hours your child watches TV everyday", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 1
   }, 
@@ -1323,6 +1637,8 @@
    "fieldtype": "Text", 
    "hidden": 0, 
    "label": "Favourite Programmes on TV", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 1
   }, 
@@ -1331,6 +1647,8 @@
    "fieldtype": "Select", 
    "hidden": 0, 
    "label": "With which Adult does your child spend most of the time", 
+   "max_length": 0, 
+   "max_value": 0, 
    "options": "Mother\nFather\nGrandmother\nGrandfather\nDomestic Help\nOthers", 
    "read_only": 0, 
    "reqd": 1
@@ -1340,6 +1658,8 @@
    "fieldtype": "Check", 
    "hidden": 0, 
    "label": "Does your child have opportunities to play with other children", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -1348,6 +1668,8 @@
    "fieldtype": "Check", 
    "hidden": 0, 
    "label": "Building Society", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -1356,6 +1678,8 @@
    "fieldtype": "Check", 
    "hidden": 0, 
    "label": "Classes", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -1364,6 +1688,8 @@
    "fieldtype": "Check", 
    "hidden": 0, 
    "label": "Social Group", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -1372,6 +1698,8 @@
    "fieldtype": "Check", 
    "hidden": 0, 
    "label": "Parks", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -1380,6 +1708,8 @@
    "fieldtype": "Check", 
    "hidden": 0, 
    "label": "Family Occasions", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -1388,6 +1718,8 @@
    "fieldtype": "Data", 
    "hidden": 0, 
    "label": "Other spend most time", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -1396,6 +1728,8 @@
    "fieldtype": "Text", 
    "hidden": 0, 
    "label": "What kind of physical activity does your child indulge in", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -1405,6 +1739,8 @@
    "fieldtype": "Page Break", 
    "hidden": 0, 
    "label": "Questionnaire", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -1414,6 +1750,8 @@
    "fieldtype": "Text", 
    "hidden": 0, 
    "label": "Question 1", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 1
   }, 
@@ -1423,6 +1761,8 @@
    "fieldtype": "Text", 
    "hidden": 0, 
    "label": "Question 2", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 1
   }, 
@@ -1432,6 +1772,8 @@
    "fieldtype": "Text", 
    "hidden": 0, 
    "label": "Question 3", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 1
   }, 
@@ -1441,6 +1783,8 @@
    "fieldtype": "Text", 
    "hidden": 0, 
    "label": "Question 4", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 1
   }, 
@@ -1448,12 +1792,16 @@
    "fieldtype": "Page Break", 
    "hidden": 0, 
    "label": "Payment", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
   {
    "fieldtype": "HTML", 
    "hidden": 0, 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }
