@@ -1,0 +1,19 @@
+<div class="web-list-item transaction-list-item">
+	<a href="/{{ pathname }}?name={{ doc.name }}">
+		<div class="row">
+			<div class="col-sm-6">
+				{{ doc.title }} ({{ doc.name}})
+			</div>
+			<div class="col-sm-3">
+				<span class="indicator small {{ doc.paid and "green" or "orange" }}">
+				{{ doc.paid and "Paid" or "Pending" }}</span>
+			</div>
+			<div class="col-sm-3 text-right">
+				<div class="small text-muted transaction-time"
+					title="{{ frappe.utils.format_datetime(doc.modified, "medium") }}">
+					{{ frappe.format_date(doc.modified) }}
+				</div>
+			</div>
+		</div>
+	</a>
+</div>
