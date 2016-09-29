@@ -39,7 +39,8 @@ def validate_sibling_info(doc, method):
 		doc.number_of_siblings = len(doc.siblings)
 		sibling_age = []
 		for sibling in doc.siblings:
-			sibling_age.append(relativedelta(datetime.date.today(), getdate(sibling.date_of_birth)).years)
+			if sibling.date_of_birth:
+				sibling_age.append(relativedelta(datetime.date.today(), getdate(sibling.date_of_birth)).years)
 		doc.age_of_siblings = comma_and(sibling_age)
 		child_age = relativedelta(datetime.date.today(), getdate(doc.date_of_birth)).years
 		if not any(age> child_age for age in sibling_age):
