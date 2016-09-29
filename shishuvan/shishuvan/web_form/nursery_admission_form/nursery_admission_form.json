@@ -15,8 +15,8 @@
  "introduction_text": "Application for Admission to Shishuvan Nursery Batch 2017-18.", 
  "is_standard": 1, 
  "login_required": 1, 
- "modified": "2016-09-26 07:26:23.182547", 
- "modified_by": "Administrator", 
+ "modified": "2016-09-29 13:28:31.344429", 
+ "modified_by": "neil@frappe.io", 
  "module": "Shishuvan", 
  "name": "nursery-admission-form", 
  "owner": "Administrator", 
@@ -81,7 +81,7 @@
    "fieldtype": "Data", 
    "hidden": 0, 
    "label": "First Name", 
-   "max_length": 0, 
+   "max_length": 35, 
    "max_value": 0, 
    "read_only": 0, 
    "reqd": 1
@@ -91,7 +91,7 @@
    "fieldtype": "Data", 
    "hidden": 0, 
    "label": "Middle Name", 
-   "max_length": 0, 
+   "max_length": 35, 
    "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
@@ -101,7 +101,7 @@
    "fieldtype": "Data", 
    "hidden": 0, 
    "label": "Last Name", 
-   "max_length": 0, 
+   "max_length": 35, 
    "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
@@ -152,7 +152,7 @@
    "fieldtype": "Data", 
    "hidden": 0, 
    "label": "Address Line 1", 
-   "max_length": 0, 
+   "max_length": 50, 
    "max_value": 0, 
    "read_only": 0, 
    "reqd": 1
@@ -349,18 +349,18 @@
    "fieldtype": "Data", 
    "hidden": 0, 
    "label": "Name", 
-   "max_length": 0, 
+   "max_length": 70, 
    "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
   {
    "fieldname": "mother_age", 
-   "fieldtype": "Data", 
+   "fieldtype": "Int", 
    "hidden": 0, 
    "label": "Age", 
-   "max_length": 0, 
-   "max_value": 0, 
+   "max_length": 2, 
+   "max_value": 99, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -409,8 +409,8 @@
    "fieldtype": "Int", 
    "hidden": 0, 
    "label": "Landline Number", 
-   "max_length": 0, 
-   "max_value": 2147483647, 
+   "max_length": 10, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -419,7 +419,7 @@
    "fieldtype": "Int", 
    "hidden": 0, 
    "label": "Mobile Number", 
-   "max_length": 0, 
+   "max_length": 10, 
    "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
@@ -444,6 +444,7 @@
    "reqd": 0
   }, 
   {
+   "default": "70", 
    "fieldname": "father_name", 
    "fieldtype": "Data", 
    "hidden": 0, 
@@ -458,7 +459,7 @@
    "fieldtype": "Int", 
    "hidden": 0, 
    "label": "Age", 
-   "max_length": 0, 
+   "max_length": 2, 
    "max_value": 99, 
    "read_only": 0, 
    "reqd": 0
@@ -508,8 +509,8 @@
    "fieldtype": "Int", 
    "hidden": 0, 
    "label": "Landline Number", 
-   "max_length": 0, 
-   "max_value": 2147483647, 
+   "max_length": 10, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -518,8 +519,8 @@
    "fieldtype": "Int", 
    "hidden": 0, 
    "label": "Mobile Number", 
-   "max_length": 0, 
-   "max_value": 2147483647, 
+   "max_length": 10, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -556,7 +557,7 @@
    "fieldtype": "Text", 
    "hidden": 0, 
    "label": "Why is Shishuvan a choice for your child ?", 
-   "max_length": 0, 
+   "max_length": 1500, 
    "max_value": 0, 
    "read_only": 0, 
    "reqd": 1
@@ -566,7 +567,7 @@
    "fieldtype": "Text", 
    "hidden": 0, 
    "label": "According to you, what is an ideal partnership between the school and parents, in the education of the child ?", 
-   "max_length": 0, 
+   "max_length": 1500, 
    "max_value": 0, 
    "read_only": 0, 
    "reqd": 1
@@ -576,18 +577,19 @@
    "fieldtype": "Text", 
    "hidden": 0, 
    "label": "How would you like to help the school as parents ?", 
-   "max_length": 0, 
+   "max_length": 1500, 
    "max_value": 0, 
    "read_only": 0, 
    "reqd": 1
   }, 
   {
    "fieldname": "heard_from", 
-   "fieldtype": "Data", 
+   "fieldtype": "Select", 
    "hidden": 0, 
    "label": "You heard about Shishuvan through ?", 
    "max_length": 0, 
    "max_value": 0, 
+   "options": "\nNews Paper\nWebsite\nPatrika\nFriends/Relatives\nAny Other Source", 
    "read_only": 0, 
    "reqd": 1
   }, 
@@ -703,7 +705,7 @@
    "fieldtype": "Int", 
    "hidden": 0, 
    "label": "Mother's age at the time of child's birth/ adoption", 
-   "max_length": 0, 
+   "max_length": 2, 
    "max_value": 99, 
    "read_only": 0, 
    "reqd": 1
@@ -713,7 +715,7 @@
    "fieldtype": "Int", 
    "hidden": 0, 
    "label": "Fathers's age at time of child's birth/ adoption", 
-   "max_length": 0, 
+   "max_length": 2, 
    "max_value": 99, 
    "read_only": 0, 
    "reqd": 1
@@ -742,7 +744,7 @@
    "fieldtype": "Text", 
    "hidden": 0, 
    "label": "Any complications or medication taken during the pregnancy", 
-   "max_length": 0, 
+   "max_length": 1500, 
    "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
@@ -762,7 +764,7 @@
    "fieldtype": "Text", 
    "hidden": 0, 
    "label": "Child's health at birth (describe any health problems.)", 
-   "max_length": 0, 
+   "max_length": 1500, 
    "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
@@ -782,7 +784,7 @@
    "fieldtype": "Text", 
    "hidden": 0, 
    "label": "if yes please describe the reasons", 
-   "max_length": 0, 
+   "max_length": 1500, 
    "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
@@ -820,7 +822,7 @@
    "fieldtype": "Text", 
    "hidden": 0, 
    "label": "Describe childs general behaviour during the neonatal period (first four weeks)", 
-   "max_length": 0, 
+   "max_length": 1500, 
    "max_value": 0, 
    "read_only": 0, 
    "reqd": 1
@@ -830,7 +832,7 @@
    "fieldtype": "Text", 
    "hidden": 0, 
    "label": "When did your child have his/her first paediatric visit ? Name & address of the paediatrician/family doctor.", 
-   "max_length": 0, 
+   "max_length": 1500, 
    "max_value": 0, 
    "read_only": 0, 
    "reqd": 1
@@ -1049,7 +1051,7 @@
    "fieldtype": "Text", 
    "hidden": 0, 
    "label": "If not please mention why ?", 
-   "max_length": 0, 
+   "max_length": 1500, 
    "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
@@ -1059,7 +1061,7 @@
    "fieldtype": "Text", 
    "hidden": 0, 
    "label": "Has your child ever been hospitalized after birth till now ? Describe the circumstance.", 
-   "max_length": 0, 
+   "max_length": 1500, 
    "max_value": 0, 
    "read_only": 0, 
    "reqd": 1
@@ -1069,7 +1071,7 @@
    "fieldtype": "Text", 
    "hidden": 0, 
    "label": "Does your child have any chronic or debilitating illness", 
-   "max_length": 0, 
+   "max_length": 1500, 
    "max_value": 0, 
    "read_only": 0, 
    "reqd": 1
@@ -1079,7 +1081,7 @@
    "fieldtype": "Text", 
    "hidden": 0, 
    "label": "Is your child currently under any kind of medication ", 
-   "max_length": 0, 
+   "max_length": 1500, 
    "max_value": 0, 
    "read_only": 0, 
    "reqd": 1
@@ -1089,7 +1091,7 @@
    "fieldtype": "Text", 
    "hidden": 0, 
    "label": "Does your child have any allergies", 
-   "max_length": 0, 
+   "max_length": 1500, 
    "max_value": 0, 
    "read_only": 0, 
    "reqd": 1
@@ -1099,7 +1101,7 @@
    "fieldtype": "Text", 
    "hidden": 0, 
    "label": "Does your child have any disablities", 
-   "max_length": 0, 
+   "max_length": 1500, 
    "max_value": 0, 
    "read_only": 0, 
    "reqd": 1
@@ -1389,7 +1391,7 @@
    "fieldtype": "Text", 
    "hidden": 0, 
    "label": "Do you as a parent have any concerns about your child", 
-   "max_length": 0, 
+   "max_length": 1500, 
    "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
@@ -1518,7 +1520,7 @@
    "fieldtype": "Text", 
    "hidden": 0, 
    "label": "Any description of any of the above and when", 
-   "max_length": 0, 
+   "max_length": 1500, 
    "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
@@ -1617,7 +1619,7 @@
    "fieldtype": "Text", 
    "hidden": 0, 
    "label": "Eating Habits", 
-   "max_length": 0, 
+   "max_length": 1500, 
    "max_value": 0, 
    "read_only": 0, 
    "reqd": 1
@@ -1637,7 +1639,7 @@
    "fieldtype": "Text", 
    "hidden": 0, 
    "label": "Favourite Programmes on TV", 
-   "max_length": 0, 
+   "max_length": 1500, 
    "max_value": 0, 
    "read_only": 0, 
    "reqd": 1
@@ -1728,7 +1730,7 @@
    "fieldtype": "Text", 
    "hidden": 0, 
    "label": "What kind of physical activity does your child indulge in", 
-   "max_length": 0, 
+   "max_length": 1500, 
    "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
@@ -1750,7 +1752,7 @@
    "fieldtype": "Text", 
    "hidden": 0, 
    "label": "Question 1", 
-   "max_length": 0, 
+   "max_length": 1500, 
    "max_value": 0, 
    "read_only": 0, 
    "reqd": 1
@@ -1761,7 +1763,7 @@
    "fieldtype": "Text", 
    "hidden": 0, 
    "label": "Question 2", 
-   "max_length": 0, 
+   "max_length": 1500, 
    "max_value": 0, 
    "read_only": 0, 
    "reqd": 1
@@ -1772,7 +1774,7 @@
    "fieldtype": "Text", 
    "hidden": 0, 
    "label": "Question 3", 
-   "max_length": 0, 
+   "max_length": 1500, 
    "max_value": 0, 
    "read_only": 0, 
    "reqd": 1
@@ -1783,10 +1785,31 @@
    "fieldtype": "Text", 
    "hidden": 0, 
    "label": "Question 4", 
-   "max_length": 0, 
+   "max_length": 1500, 
    "max_value": 0, 
    "read_only": 0, 
    "reqd": 1
+  }, 
+  {
+   "fieldtype": "Page Break", 
+   "hidden": 0, 
+   "label": "Terms", 
+   "max_length": 0, 
+   "max_value": 0, 
+   "options": "", 
+   "read_only": 0, 
+   "reqd": 0
+  }, 
+  {
+   "description": "", 
+   "fieldtype": "HTML", 
+   "hidden": 0, 
+   "label": "", 
+   "max_length": 0, 
+   "max_value": 0, 
+   "options": "<div>1. FILLING UPOF THIS FORM DOES NOT GUARANTEE THE ADMISSION OF YOUR CHILD.</div><div>2. Admission is strictly on merit. \u201cNO DONATIONS ARE EXPECTED / ACCEPTED.</div><div>3. The school does not encourage any agents or management representatives for securing admissions. Please</div><div>beware of any impostors. Dealings with such persons posing as agents / management representatives will be at</div><div>your own risk and will not be binding on the school / management.</div><div>4. All decisions taken by the management concerning admissions will be final and indisputable.</div><div>5. ALL THE FEES PAID TO CONFIRM ADMISSION AND ANY FEES PAID THEREAFTER WILL NOT BE</div><div>REFUNDED UNDER ANY CIRCUMSTANCES AND FOR ANY REASON.</div><div>6. The school strongly recommends the use of the school bus, for commuting of students, as per the schools</div><div>\u201cZERO TRAFFIC POLICY.\u201d</div><div>7. The name of student absent from school for a period of one month or more without permission will be struck off</div><div>the school register.</div><div><br></div><div>BY PROCEEDING YOU AGREE TO THE ABOVE INSTRUCTIONS (WHICH ARE ALSO PUT UP ON THE SCHOOL'S WEBSITE FOR READY REFERENCE) AND KNOWING THEM WE HAVE ACCEPTED AND AGREE TO ABIDE BY THEM. WE FURTHER ASSURE THAT ALL INFORMATION/PARTICULARS FURNISHED BY US ARE TRUE AND CORRECT AND BINDING.</div>\n\n\n<!-- markdown -->", 
+   "read_only": 1, 
+   "reqd": 0
   }, 
   {
    "fieldtype": "Page Break", 

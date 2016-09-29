@@ -23,8 +23,6 @@ def validate_text_size(doc, method):
 	for field in doc.meta.fields:
 		if field.fieldtype == "Text" and len(doc.get(field.fieldname)) > 1500:
 			frappe.throw("{0} must be less than 300 Words (1500 Characters)".format(field.label))
-	if len(doc.address_line_1) >50:
-		frappe.throw("Address Line 1 cannot be greater than 50 Characters.")
 
 def validate_milestones(doc, method):
 	for field in ["held_head_steady", "could_walk_independendently", "pulled_toys_along_while_walking",
