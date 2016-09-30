@@ -15,8 +15,8 @@
  "introduction_text": "Application for Admission to Shishuvan Nursery Batch 2017-18.", 
  "is_standard": 1, 
  "login_required": 1, 
- "modified": "2016-09-29 14:47:25.267137", 
- "modified_by": "neil@frappe.io", 
+ "modified": "2016-09-30 18:58:37.426597", 
+ "modified_by": "Administrator", 
  "module": "Shishuvan", 
  "name": "nursery-admission-form", 
  "owner": "Administrator", 
@@ -537,7 +537,7 @@
   {
    "fieldtype": "Page Break", 
    "hidden": 0, 
-   "label": "Why Shishuvan", 
+   "label": "Your Views on Shishuvan", 
    "max_length": 0, 
    "max_value": 0, 
    "read_only": 0, 
@@ -656,6 +656,16 @@
    "fieldtype": "Attach", 
    "hidden": 0, 
    "label": "Father's Educational Certificates", 
+   "max_length": 0, 
+   "max_value": 0, 
+   "read_only": 0, 
+   "reqd": 0
+  }, 
+  {
+   "fieldname": "address_proof", 
+   "fieldtype": "Attach", 
+   "hidden": 0, 
+   "label": "Address Proof", 
    "max_length": 0, 
    "max_value": 0, 
    "read_only": 0, 
@@ -1120,7 +1130,7 @@
    "fieldname": "", 
    "fieldtype": "Section Break", 
    "hidden": 0, 
-   "label": "Mention Age at which the following milestones were achieved (in Months)", 
+   "label": "Mention Age at which the following milestones were achieved (in Months). Please check the milestone if achieved.", 
    "max_length": 0, 
    "max_value": 0, 
    "read_only": 0, 
@@ -1138,11 +1148,11 @@
   }, 
   {
    "fieldname": "held_head_steady", 
-   "fieldtype": "Data", 
+   "fieldtype": "Int", 
    "hidden": 0, 
    "label": "Held head steady at month", 
    "max_length": 0, 
-   "max_value": 0, 
+   "max_value": 36, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -1158,11 +1168,11 @@
   }, 
   {
    "fieldname": "could_walk_independendently", 
-   "fieldtype": "Data", 
+   "fieldtype": "Int", 
    "hidden": 0, 
    "label": "Could walk independendently at month", 
    "max_length": 0, 
-   "max_value": 0, 
+   "max_value": 36, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -1178,11 +1188,11 @@
   }, 
   {
    "fieldname": "pulled_toys_along_while_walking", 
-   "fieldtype": "Data", 
+   "fieldtype": "Int", 
    "hidden": 0, 
    "label": "Pulled toys along, while walking at month", 
    "max_length": 0, 
-   "max_value": 0, 
+   "max_value": 36, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -1198,11 +1208,11 @@
   }, 
   {
    "fieldname": "could_feed_self_with_or_without_a_soppn", 
-   "fieldtype": "Data", 
+   "fieldtype": "Int", 
    "hidden": 0, 
    "label": "Could feed self with or without a spoon at month", 
    "max_length": 0, 
-   "max_value": 0, 
+   "max_value": 36, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -1218,11 +1228,11 @@
   }, 
   {
    "fieldname": "recognized_the_names_of_familiar_people_object_and_body_parts", 
-   "fieldtype": "Data", 
+   "fieldtype": "Int", 
    "hidden": 0, 
    "label": "Recognized the names of familiar people object and body parts at month", 
    "max_length": 0, 
-   "max_value": 0, 
+   "max_value": 36, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -1238,11 +1248,11 @@
   }, 
   {
    "fieldname": "spoke_word_sentences", 
-   "fieldtype": "Data", 
+   "fieldtype": "Int", 
    "hidden": 0, 
    "label": "Spoke 2 to 4 word sentences at month", 
    "max_length": 0, 
-   "max_value": 0, 
+   "max_value": 36, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -1258,11 +1268,11 @@
   }, 
   {
    "fieldname": "followed_simple_instructions", 
-   "fieldtype": "Data", 
+   "fieldtype": "Int", 
    "hidden": 0, 
    "label": "Followed simple instructions at month", 
    "max_length": 0, 
-   "max_value": 0, 
+   "max_value": 36, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -1278,11 +1288,11 @@
   }, 
   {
    "fieldname": "sorted_shapes", 
-   "fieldtype": "Data", 
+   "fieldtype": "Int", 
    "hidden": 0, 
    "label": "Sorted shapes at month", 
    "max_length": 0, 
-   "max_value": 0, 
+   "max_value": 36, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -1298,11 +1308,11 @@
   }, 
   {
    "fieldname": "cooperated_with_dressing", 
-   "fieldtype": "Data", 
+   "fieldtype": "Int", 
    "hidden": 0, 
    "label": "Cooperated with dressing at month", 
    "max_length": 0, 
-   "max_value": 0, 
+   "max_value": 36, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -1318,11 +1328,11 @@
   }, 
   {
    "fieldname": "repeated_words_spoken_to_him", 
-   "fieldtype": "Data", 
+   "fieldtype": "Int", 
    "hidden": 0, 
    "label": "Repeated words spoken to him / her at month", 
    "max_length": 0, 
-   "max_value": 0, 
+   "max_value": 36, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -1338,11 +1348,11 @@
   }, 
   {
    "fieldname": "toiled_trained", 
-   "fieldtype": "Data", 
+   "fieldtype": "Int", 
    "hidden": 0, 
    "label": "Toiled trained at month", 
    "max_length": 0, 
-   "max_value": 0, 
+   "max_value": 36, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -1358,11 +1368,11 @@
   }, 
   {
    "fieldname": "smiled_at_familiar_faces", 
-   "fieldtype": "Data", 
+   "fieldtype": "Int", 
    "hidden": 0, 
    "label": "Smiled at familiar faces at month", 
    "max_length": 0, 
-   "max_value": 0, 
+   "max_value": 36, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -1378,11 +1388,11 @@
   }, 
   {
    "fieldname": "shared_his_toys_with_others", 
-   "fieldtype": "Data", 
+   "fieldtype": "Int", 
    "hidden": 0, 
    "label": "Shared his / her toys with others at month", 
    "max_length": 0, 
-   "max_value": 0, 
+   "max_value": 36, 
    "read_only": 0, 
    "reqd": 0
   }, 
@@ -1807,7 +1817,7 @@
    "label": "", 
    "max_length": 0, 
    "max_value": 0, 
-   "options": "<div>1. FILLING UPOF THIS FORM DOES NOT GUARANTEE THE ADMISSION OF YOUR CHILD.</div><div>2. Admission is strictly on merit. \u201cNO DONATIONS ARE EXPECTED / ACCEPTED.</div><div>3. The school does not encourage any agents or management representatives for securing admissions. Please</div><div>beware of any impostors. Dealings with such persons posing as agents / management representatives will be at</div><div>your own risk and will not be binding on the school / management.</div><div>4. All decisions taken by the management concerning admissions will be final and indisputable.</div><div>5. ALL THE FEES PAID TO CONFIRM ADMISSION AND ANY FEES PAID THEREAFTER WILL NOT BE</div><div>REFUNDED UNDER ANY CIRCUMSTANCES AND FOR ANY REASON.</div><div>6. The school strongly recommends the use of the school bus, for commuting of students, as per the schools</div><div>\u201cZERO TRAFFIC POLICY.\u201d</div><div>7. The name of student absent from school for a period of one month or more without permission will be struck off</div><div>the school register.</div><div><br></div><div>BY PROCEEDING YOU AGREE TO THE ABOVE INSTRUCTIONS (WHICH ARE ALSO PUT UP ON THE SCHOOL'S WEBSITE FOR READY REFERENCE) AND KNOWING THEM WE HAVE ACCEPTED AND AGREE TO ABIDE BY THEM. WE FURTHER ASSURE THAT ALL INFORMATION/PARTICULARS FURNISHED BY US ARE TRUE AND CORRECT AND BINDING.</div>\n\n\n<!-- markdown -->", 
+   "options": "<div>1. FILLING UPOF THIS FORM DOES NOT GUARANTEE THE ADMISSION OF YOUR CHILD.</div><div>2. Admission is strictly on merit. \u201cNO DONATIONS ARE EXPECTED / ACCEPTED.</div><div>3. The school does not encourage any agents or management representatives for securing admissions. Please beware of any impostors. Dealings with such persons posing as agents / management representatives will be atyour own risk and will not be binding on the school / management.</div><div>4. All decisions taken by the management concerning admissions will be final and indisputable.</div><div>5. ALL THE FEES PAID TO CONFIRM ADMISSION AND ANY FEES PAID THEREAFTER WILL NOT BE REFUNDED UNDER ANY CIRCUMSTANCES AND FOR ANY REASON.</div><div>6. The school strongly recommends the use of the school bus, for commuting of students, as per the schools \u201cZERO TRAFFIC POLICY.\u201d</div><div>7. The name of student absent from school for a period of one month or more without permission will be struck off the school register.</div><div><br></div><div>BY PROCEEDING YOU AGREE TO THE ABOVE INSTRUCTIONS (WHICH ARE ALSO PUT UP ON THE SCHOOL'S WEBSITE FOR READY REFERENCE) AND KNOWING THEM WE HAVE ACCEPTED AND AGREE TO ABIDE BY THEM. WE FURTHER ASSURE THAT ALL INFORMATION/PARTICULARS FURNISHED BY US ARE TRUE AND CORRECT AND BINDING.</div>\n\n\n<!-- markdown -->", 
    "read_only": 1, 
    "reqd": 0
   }, 
