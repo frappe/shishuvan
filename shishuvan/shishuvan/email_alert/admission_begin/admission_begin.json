@@ -1,0 +1,25 @@
+{
+ "attach_print": 0, 
+ "creation": "2016-10-02 11:14:40.813616", 
+ "days_in_advance": 0, 
+ "docstatus": 0, 
+ "doctype": "Email Alert", 
+ "document_type": "Student Applicant", 
+ "enabled": 1, 
+ "event": "Custom", 
+ "idx": 0, 
+ "is_standard": 1, 
+ "message": "Test", 
+ "modified": "2016-10-02 12:48:09.294469", 
+ "modified_by": "Administrator", 
+ "module": "Shishuvan", 
+ "name": "admission-begin", 
+ "owner": "Administrator", 
+ "recipients": [
+  {
+   "cc": "shishuvan.admissions@gmail.com", 
+   "email_by_document_field": "owner"
+  }
+ ], 
+ "subject": "Your Application has Started"
+}

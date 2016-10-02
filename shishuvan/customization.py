@@ -48,3 +48,6 @@ def validate_sibling_info(doc, method):
 		else:
 			doc.your_child_is_the_eldest = "Middle"
 
+def send_start_email(doc, method):
+	frappe.get_doc('Email Alert', 'admission-begin').send(doc)
+
