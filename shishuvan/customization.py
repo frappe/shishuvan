@@ -9,13 +9,13 @@ from frappe.utils import cint, getdate, comma_and
 from dateutil.relativedelta import relativedelta
 
 def validate_student_applicant(doc, method):
-	validate_admission_age_criteria(doc, method)
-	validate_text_size(doc, method)
-	validate_milestones(doc, method)
-	validate_sibling_info(doc, method)
+	if doc.program=="Nursery":
+		validate_admission_age_criteria(doc, method)
+		validate_text_size(doc, method)
+		validate_milestones(doc, method)
+		validate_sibling_info(doc, method)
 
 def validate_admission_age_criteria(doc, method):
-	if doc.program=="Nursery":
 		if (getdate(doc.date_of_birth) < getdate("2013-09-01") or getdate(doc.date_of_birth) > getdate("2014-08-31")):
 			frappe.throw("Child does not meet age criteria for this year's admission")
 
