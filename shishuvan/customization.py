@@ -21,7 +21,7 @@ def validate_admission_age_criteria(doc, method):
 
 def validate_text_size(doc, method):
 	for field in doc.meta.fields:
-		if field.fieldtype == "Text" and len(doc.get(field.fieldname)) > 1500:
+		if field.fieldtype == "Text" and len(doc.get(field.fieldname) or '') > 1500:
 			frappe.throw("{0} must be less than 300 Words (1500 Characters)".format(field.label))
 
 def validate_milestones(doc, method):
