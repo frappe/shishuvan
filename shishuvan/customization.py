@@ -9,14 +9,38 @@ from frappe.utils import cint, getdate, comma_and
 from dateutil.relativedelta import relativedelta
 
 def validate_student_applicant(doc, method):
+	validate_admission_age_criteria(doc, method)
 	if doc.program=="Nursery":
-		validate_admission_age_criteria(doc, method)
 		validate_text_size(doc, method)
 		validate_milestones(doc, method)
 		validate_sibling_info(doc, method)
 
 def validate_admission_age_criteria(doc, method):
-		if (getdate(doc.date_of_birth) < getdate("2013-09-01") or getdate(doc.date_of_birth) > getdate("2014-08-31")):
+		min_date = ""
+		max_date = ""
+		if doc.program=="Nursery":
+			min_date = "2013-09-01"
+			max_date = "2014-08-31"
+		if doc.program=="Jr. K.G.":
+			min_date = "2012-09-01"
+			max_date = "2013-08-31"
+		if doc.program=="Sr. K.G.":
+			min_date = "2011-09-01"
+			max_date = "2012-08-31"
+		if doc.program=="STD. I":
+			min_date = "2010-09-01"
+			max_date = "2011-08-31"
+		if doc.program=="STD. II":
+			min_date = "2009-09-01"
+			max_date = "2010-08-31"
+		if doc.program=="STD. III":
+			min_date = "2008-09-01"
+			max_date = "2009-08-31"
+		if doc.program=="STD. IV":
+			min_date = "2007-09-01"
+			max_date = "2008-08-31"
+			
+		if (min_date and getdate(doc.date_of_birth) < getdate(min_date) or getdate(doc.date_of_birth) > getdate(max_date)):
 			frappe.throw("Child does not meet age criteria for this year's admission")
 
 def validate_text_size(doc, method):
