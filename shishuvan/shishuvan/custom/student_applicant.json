@@ -6461,5 +6461,6 @@
    "property_type": "Text", 
    "value": "AP."
   }
- ]
+ ], 
+ "sync_on_migrate": 1
 }

@@ -1,6 +1,6 @@
 Hello,
 
-You have begun the admission process for Shishuvan Nursery for 2016/17.
+You have begun the application process for Shishuvan Nursery Batch 2017-18.
 
 The last date for completion 9th November 2016.
 
