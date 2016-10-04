@@ -11,9 +11,12 @@ from dateutil.relativedelta import relativedelta
 def validate_student_applicant(doc, method):
 	validate_admission_age_criteria(doc, method)
 	if doc.program=="Nursery":
+		doc.student_admission = "nursery-2017-18"
 		validate_text_size(doc, method)
 		validate_milestones(doc, method)
 		validate_sibling_info(doc, method)
+	else:
+		doc.student_admission = "Pre-admissions for 2017-18"
 
 def validate_admission_age_criteria(doc, method):
 		min_date = ""
