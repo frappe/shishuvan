@@ -16,7 +16,7 @@
  "is_standard": 1, 
  "login_required": 1, 
  "max_attachment_size": 0, 
- "modified": "2016-10-04 15:00:17.838962", 
+ "modified": "2016-10-04 15:05:46.905314", 
  "modified_by": "Administrator", 
  "module": "Shishuvan", 
  "name": "preliminary-application-form", 
@@ -566,10 +566,18 @@
    "reqd": 0
   }, 
   {
-   "fieldname": "ideal_partnership", 
-   "fieldtype": "Text", 
+   "fieldtype": "Page Break", 
    "hidden": 0, 
-   "label": "According to you, what is an ideal partnership between the school and parents, in the education of the child ?", 
+   "label": "Payment", 
+   "max_length": 0, 
+   "max_value": 0, 
+   "read_only": 0, 
+   "reqd": 0
+  }, 
+  {
+   "fieldtype": "HTML", 
+   "hidden": 0, 
+   "label": "payment_html", 
    "max_length": 0, 
    "max_value": 0, 
    "read_only": 0, 
