@@ -16,7 +16,7 @@
  "is_standard": 1, 
  "login_required": 1, 
  "max_attachment_size": 0, 
- "modified": "2016-10-03 18:46:32.214943", 
+ "modified": "2016-10-04 02:35:59.408751", 
  "modified_by": "Administrator", 
  "module": "Shishuvan", 
  "name": "preliminary-application-form", 
@@ -39,6 +39,17 @@
    "options": "", 
    "read_only": 0, 
    "reqd": 1
+  }, 
+  {
+   "fieldname": "student_admission", 
+   "fieldtype": "Link", 
+   "hidden": 1, 
+   "label": "Student Admission", 
+   "max_length": 0, 
+   "max_value": 0, 
+   "options": "Student Admission", 
+   "read_only": 0, 
+   "reqd": 0
   }, 
   {
    "fieldname": "program", 
