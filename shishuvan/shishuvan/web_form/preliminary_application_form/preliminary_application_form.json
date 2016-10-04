@@ -16,7 +16,7 @@
  "is_standard": 1, 
  "login_required": 1, 
  "max_attachment_size": 0, 
- "modified": "2016-10-04 18:19:49.288834", 
+ "modified": "2016-10-04 20:09:43.687306", 
  "modified_by": "Administrator", 
  "module": "Shishuvan", 
  "name": "preliminary-application-form", 
@@ -60,7 +60,7 @@
    "label": "Program", 
    "max_length": 0, 
    "max_value": 0, 
-   "options": "\nJr. K.G.\nSr. K.G.\nSTD. I\nSTD. II\nSTD. III\nSTD. IV\nSTD. V\nSTD. VI\nSTD. VII\nSTD. VIII\nSTD. IX\nSTD. X", 
+   "options": "\nJr. K.G.\nSr. K.G.\nSTD. I\nSTD. II\nSTD. III\nSTD. IV\nSTD. V\nSTD. VI\nSTD. VII\nSTD. VIII\nSTD. IX", 
    "read_only": 0, 
    "reqd": 1
   }, 
