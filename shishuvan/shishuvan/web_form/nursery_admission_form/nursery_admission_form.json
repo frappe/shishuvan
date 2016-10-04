@@ -16,7 +16,7 @@
  "is_standard": 1, 
  "login_required": 1, 
  "max_attachment_size": 0, 
- "modified": "2016-10-04 18:23:30.157237", 
+ "modified": "2016-10-04 18:27:29.485517", 
  "modified_by": "Administrator", 
  "module": "Shishuvan", 
  "name": "nursery-admission-form", 
@@ -456,12 +456,12 @@
    "reqd": 0
   }, 
   {
-   "default": "70", 
+   "default": "", 
    "fieldname": "father_name", 
    "fieldtype": "Data", 
    "hidden": 0, 
    "label": "Name", 
-   "max_length": 0, 
+   "max_length": 70, 
    "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
