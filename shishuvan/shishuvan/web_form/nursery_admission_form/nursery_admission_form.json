@@ -16,7 +16,7 @@
  "is_standard": 1, 
  "login_required": 1, 
  "max_attachment_size": 0, 
- "modified": "2016-10-04 18:11:20.626617", 
+ "modified": "2016-10-04 18:19:58.013490", 
  "modified_by": "Administrator", 
  "module": "Shishuvan", 
  "name": "nursery-admission-form", 
@@ -45,12 +45,12 @@
   {
    "fieldname": "student_admission", 
    "fieldtype": "Link", 
-   "hidden": 0, 
+   "hidden": 1, 
    "label": "Student Admission", 
    "max_length": 0, 
    "max_value": 0, 
    "options": "Student Admission", 
-   "read_only": 0, 
+   "read_only": 1, 
    "reqd": 0
   }, 
   {
@@ -603,6 +603,50 @@
    "max_length": 0, 
    "max_value": 0, 
    "options": "\nNews Paper\nWebsite\nPatrika\nFriends/Relatives\nAny Other Source", 
+   "read_only": 0, 
+   "reqd": 1
+  }, 
+  {
+   "description": "Shishuvan believes that one aim of education is to be a good human being. What else do you consider to be desirable objectives for a good school ?", 
+   "fieldname": "", 
+   "fieldtype": "Page Break", 
+   "hidden": 0, 
+   "label": "Questionnaire", 
+   "max_length": 0, 
+   "max_value": 0, 
+   "read_only": 0, 
+   "reqd": 0
+  }, 
+  {
+   "description": "Shishuvan believes that one aim of education is to be a good human being. What else do you consider to be desirable objectives for a good school ?", 
+   "fieldname": "question_1", 
+   "fieldtype": "Text", 
+   "hidden": 0, 
+   "label": "Question 1", 
+   "max_length": 1500, 
+   "max_value": 0, 
+   "read_only": 0, 
+   "reqd": 1
+  }, 
+  {
+   "description": "You are aware that Shishuvan's structure is non-competitive (no exams until class 7, no ranking, no comparison of students). After passing out from such a school how do you see your child meeting the challenges of today's highly competitive driven world ?", 
+   "fieldname": "question_2", 
+   "fieldtype": "Text", 
+   "hidden": 0, 
+   "label": "Question 2", 
+   "max_length": 1500, 
+   "max_value": 0, 
+   "read_only": 0, 
+   "reqd": 1
+  }, 
+  {
+   "description": "Some children take time to settle in the school. We would like the first experience of the school to be gentle and comfortable for him/her. If your child takes time to settle in, would you or a family member be able to spend time in the school with him/her as long as it takes(if no, please explain why, giving reasons.)", 
+   "fieldname": "question_3", 
+   "fieldtype": "Text", 
+   "hidden": 0, 
+   "label": "Question 3", 
+   "max_length": 1500, 
+   "max_value": 0, 
    "read_only": 0, 
    "reqd": 1
   }, 
@@ -1757,61 +1801,6 @@
    "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
-  }, 
-  {
-   "description": "Shishuvan believes that one aim of education is to be a good human being. What else do you consider to be desirable objectives for a good school ?", 
-   "fieldname": "", 
-   "fieldtype": "Page Break", 
-   "hidden": 0, 
-   "label": "Questionnaire", 
-   "max_length": 0, 
-   "max_value": 0, 
-   "read_only": 0, 
-   "reqd": 0
-  }, 
-  {
-   "description": "Shishuvan believes that one aim of education is to be a good human being. What else do you consider to be desirable objectives for a good school ?", 
-   "fieldname": "question_1", 
-   "fieldtype": "Text", 
-   "hidden": 0, 
-   "label": "Question 1", 
-   "max_length": 1500, 
-   "max_value": 0, 
-   "read_only": 0, 
-   "reqd": 1
-  }, 
-  {
-   "description": "You are aware that Shishuvan's structure is non-competitive (no exams until class 7, no ranking, no comparison of students). After passing out from such a school how do you see your child meeting the challenges of today's highly competitive driven world ?", 
-   "fieldname": "question_2", 
-   "fieldtype": "Text", 
-   "hidden": 0, 
-   "label": "Question 2", 
-   "max_length": 1500, 
-   "max_value": 0, 
-   "read_only": 0, 
-   "reqd": 1
-  }, 
-  {
-   "description": "Some children take time to settle in the school. We would like the first experience of the school to be gentle and comfortable for him/her. If your child takes time to settle in, would you or a family member be able to spend time in the school with him/her as long as it takes(if no, please explain why, giving reasons.)", 
-   "fieldname": "question_3", 
-   "fieldtype": "Text", 
-   "hidden": 0, 
-   "label": "Question 3", 
-   "max_length": 1500, 
-   "max_value": 0, 
-   "read_only": 0, 
-   "reqd": 1
-  }, 
-  {
-   "description": "When applications exceed the number of seats available, what criteria should the school apply for selection that are considered just and fair by all ?", 
-   "fieldname": "question_4", 
-   "fieldtype": "Text", 
-   "hidden": 0, 
-   "label": "Question 4", 
-   "max_length": 1500, 
-   "max_value": 0, 
-   "read_only": 0, 
-   "reqd": 1
   }, 
   {
    "fieldtype": "Page Break", 

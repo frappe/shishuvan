@@ -16,7 +16,7 @@
  "is_standard": 1, 
  "login_required": 1, 
  "max_attachment_size": 0, 
- "modified": "2016-10-04 16:56:45.319880", 
+ "modified": "2016-10-04 18:19:49.288834", 
  "modified_by": "Administrator", 
  "module": "Shishuvan", 
  "name": "preliminary-application-form", 
@@ -50,7 +50,7 @@
    "max_length": 0, 
    "max_value": 0, 
    "options": "Student Admission", 
-   "read_only": 0, 
+   "read_only": 1, 
    "reqd": 0
   }, 
   {
