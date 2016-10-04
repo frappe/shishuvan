@@ -1,5 +1,5 @@
 {
- "accept_payment": 0, 
+ "accept_payment": 1, 
  "allow_comments": 0, 
  "allow_delete": 0, 
  "allow_edit": 1, 
@@ -16,7 +16,7 @@
  "is_standard": 1, 
  "login_required": 1, 
  "max_attachment_size": 0, 
- "modified": "2016-10-04 02:49:20.947726", 
+ "modified": "2016-10-04 06:53:02.851346", 
  "modified_by": "Administrator", 
  "module": "Shishuvan", 
  "name": "nursery-admission-form", 
@@ -1847,7 +1847,7 @@
    "hidden": 0, 
    "max_length": 0, 
    "max_value": 0, 
-   "options": "<h4>Online Payment not activated</h4>\\n<p class='\\\"text-muted\\\"'>Online Payment will be activated from 6th October 2016. We will send you an email regarding the same. If you have any questions, get back to us at shishuvan.admissions@gmail.com</p>", 
+   "options": "", 
    "read_only": 0, 
    "reqd": 0
   }
