@@ -78,3 +78,5 @@ def validate_sibling_info(doc, method):
 def send_start_email(doc, method):
 	frappe.get_doc('Email Alert', 'admission-begin').send(doc)
 
+def on_payment_authorised(doc, method):
+	frappe.get_doc('Email Alert', 'admission-complete').send(doc)

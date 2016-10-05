@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
-from . import __version__ as app_version
 
 app_name = "shishuvan"
 app_title = "Shishuvan"
@@ -14,7 +13,8 @@ app_license = "MIT"
 doc_events = {
 	"Student Applicant": {
 		'after_insert': "shishuvan.customization.send_start_email",
-		"validate": "shishuvan.customization.validate_student_applicant"
+		"validate": "shishuvan.customization.validate_student_applicant",
+		"on_payment_authorized": "shishuvan.customization.on_payment_authorized"
 	}
 }
 
