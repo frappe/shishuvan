@@ -1,0 +1,15 @@
+.btn-primary, .btn-primary:hover, .btn-primary:focus {
+ background-color: #18a55b;
+ border-color: #18a55b;
+}
+
+.navbar-right {
+ margin-top: 8px !important;
+}
+
+.screenshot {
+    border: 1px solid #d1d8dd;
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.15);
+    margin: 8px 0px;
+    max-width: 100%;
+}

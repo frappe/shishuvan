@@ -29,7 +29,7 @@ website_context = {
 # app_include_js = "/assets/shishuvan/js/shishuvan.js"
 
 # include js, css files in header of web template
-# web_include_css = "/assets/shishuvan/css/shishuvan.css"
+web_include_css = "/assets/shishuvan/css/shishuvan.css"
 # web_include_js = "/assets/shishuvan/js/shishuvan.js"
 
 # Home Pages
