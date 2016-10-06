@@ -42,7 +42,7 @@ def validate_admission_age_criteria(doc, method):
 		if doc.program=="STD. IV":
 			min_date = "2007-09-01"
 			max_date = "2008-08-31"
-			
+
 		if (min_date and getdate(doc.date_of_birth) < getdate(min_date) or getdate(doc.date_of_birth) > getdate(max_date)):
 			frappe.throw("Child does not meet age criteria for this year's admission")
 
@@ -78,5 +78,5 @@ def validate_sibling_info(doc, method):
 def send_start_email(doc, method):
 	frappe.get_doc('Email Alert', 'admission-begin').send(doc)
 
-def on_payment_authorised(doc, method):
+def on_payment_authorized(doc, method):
 	frappe.get_doc('Email Alert', 'admission-complete').send(doc)
