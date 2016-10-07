@@ -79,4 +79,7 @@ def send_start_email(doc, method):
 	frappe.get_doc('Email Alert', 'admission-begin').send(doc)
 
 def on_payment_authorized(doc, method, status):
-	frappe.get_doc('Email Alert', 'admission-complete').send(doc)
+	if doc.program == "Nursery":
+		frappe.get_doc('Email Alert', 'admission-complete').send(doc)
+	else:
+		frappe.get_doc('Email Alert', 'application-complete-non-nursery').send(doc)
