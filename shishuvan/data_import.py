@@ -18,12 +18,24 @@ def import_students():
 			i+=1
 			student = find_student_by_name(row["Student's Name"].title(), row["Date of Birth"])
 			if not student:
+				student = find_student_by_name_and_grn(row["Student's Name"].title(), row["Admission No."])
+			if not student:
+				student = find_student_by_name_and_address(row["Student's Name"].title(), row["Address"])
+			if not student:
+				student = find_student_by_grn_and_address(row["Admission No."], row["Address"])
+				if student:
+					student.first_name = row["First Name"].title()
+					student.middle_name = row["Middle Name"].title()
+					student.last_name = row["Last Name"].title()
+			if not student:
 				student = make_student(row)	
 			try:
 				#enroll student
 				if row["Class"] not in ["Nursery", "Jr. K.G.", "Sr. K.G.", "PS"] and row["Admission No."]:
 					student.general_register_number = row["Admission No."]
-					student.save()
+				if not student.date_of_birth:
+					student.date_of_birth = getdate(row["Date of Birth"])
+				student.save()
 				make_enrollment(student.name, row["Class"], row["Year"], row["Section"])
 			except:
 				student = make_student(row)
@@ -38,8 +50,23 @@ def find_student_by_name(name, dob):
 	if student:
 		return frappe.get_doc("Student", student[0].name)
 
+def find_student_by_name_and_grn(name, grn):
+	student = frappe.db.get_all("Student", filters={"title": name, "general_register_number": grn, "uncertain": 0})
+	if student:
+		return frappe.get_doc("Student", student[0].name)
+
+def find_student_by_name_and_address(name, address):
+	student = frappe.db.get_all("Student", filters={"title": name, "address_line_1": address, "uncertain": 0})
+	if student:
+		return frappe.get_doc("Student", student[0].name)
+
+def find_student_by_grn_and_address(grn, address):
+	student = frappe.db.get_all("Student", filters={"general_register_number": grn, "address_line_1": address, "uncertain": 0})
+	if student:
+		return frappe.get_doc("Student", student[0].name)
+
 def find_student_by_grn(grn):
-	return frappe.db.get_all("Student", filters={"uncertain": 0, "general_register_number":grn})
+	return frappe.db.get_all("Student", filters={"uncertain": 0, "general_register_number": grn})
 
 def make_student(row):
 	student = frappe.new_doc("Student")
@@ -48,8 +75,6 @@ def make_student(row):
 	student.last_name = row["Last Name"].title()
 	if row["Date of Birth"]:
 		student.date_of_birth = getdate(row["Date of Birth"])
-	else:
-		student.uncertain = 1
 	student.blood_group = row["Blood Group"]
 	student.gender = row["Gender"]
 	student.general_register_number = row["Admission No."]
@@ -59,7 +84,7 @@ def make_student(row):
 	student.student_mobile_number = row["Fax"]
 	student.landline_number = row["Phone"]
 	student.emergency_number = row["Emergency No."]
-	student.joining_date = row["Date of Admission"]
+	student.joining_date = getdate(row["Date of Admission"])
 	student.religion = row["Religion"]
 	student.caste = row["Caste"]
 	student.nationality = row["Nationality"]
@@ -101,4 +126,3 @@ def make_enrollment(student, program,academic_year, section):
 	prog_enrollment.academic_year = academic_year
 	prog_enrollment.section = section
 	prog_enrollment.save()
-	prog_enrollment.submit()
