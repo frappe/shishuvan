@@ -28,7 +28,7 @@ def import_students():
 					student.middle_name = row["Middle Name"].title()
 					student.last_name = row["Last Name"].title()
 			if not student:
-				student = make_student(row)	
+				student = make_student(row)
 			try:
 				#enroll student
 				if row["Class"] not in ["Nursery", "Jr. K.G.", "Sr. K.G.", "PS"] and row["Admission No."]:
