@@ -10,6 +10,7 @@ from dateutil.relativedelta import relativedelta
 
 def validate_student_applicant(doc, method):
 	validate_admission_age_criteria(doc, method)
+	title_case_name(doc)
 	if doc.program=="Nursery":
 		doc.student_admission = "nursery-2017-18"
 		validate_text_size(doc, method)
@@ -45,6 +46,12 @@ def validate_admission_age_criteria(doc, method):
 
 		if (min_date and getdate(doc.date_of_birth) < getdate(min_date) or getdate(doc.date_of_birth) > getdate(max_date)):
 			frappe.throw("Child does not meet age criteria for this year's admission")
+
+def title_case_name(doc):
+	doc.first_name = doc.first_name.title()
+	doc.middle_name = doc.middle_name.title()
+	doc.last_name = doc.last_name.title()
+	doc.title = doc.title.title()
 
 def validate_text_size(doc, method):
 	for field in doc.meta.fields:
