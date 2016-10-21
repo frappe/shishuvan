@@ -19,6 +19,10 @@ def validate_student_applicant(doc, method):
 	else:
 		doc.student_admission = "Pre-admissions for 2017-18"
 
+def submit_student_applicant(doc, method):
+	if doc.application_status != "Documents Verified":
+		frappe.throw("Please change the status to 'Documents Verified' before submitting")
+
 def validate_admission_age_criteria(doc, method):
 		min_date = ""
 		max_date = ""
