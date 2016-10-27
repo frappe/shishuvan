@@ -116,7 +116,7 @@ def make_guardian(name, email, mobile, org, org_address, org_city):
 	guardian.save()
 	return guardian.name
 	
-def make_enrollment(student, program,academic_year, section, uncertain):
+def make_enrollment(student, program,academic_year, section, uncertain=False):
 	prog_enrollment = frappe.new_doc("Program Enrollment")
 	prog_enrollment.student = student
 	if program in ["Nursery", "Jr. K.G.", "Sr. K.G.", "PS"]:
@@ -125,4 +125,6 @@ def make_enrollment(student, program,academic_year, section, uncertain):
 		prog_enrollment.program = "STD. " + program
 	prog_enrollment.academic_year = academic_year
 	prog_enrollment.section = section
+	if uncertain:
+		prog_enrollment.uncertain = 1
 	prog_enrollment.save()
