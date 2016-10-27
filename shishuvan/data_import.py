@@ -41,7 +41,7 @@ def import_students():
 				student = make_student(row)
 				student.uncertain = 1
 				student.save()
-				make_enrollment(student.name, row["Class"], row["Year"], row["Section"])
+				make_enrollment(student.name, row["Class"], row["Year"], row["Section"], 1)
 			frappe.db.commit()
 		frappe.flags.in_import = False
 
@@ -116,7 +116,7 @@ def make_guardian(name, email, mobile, org, org_address, org_city):
 	guardian.save()
 	return guardian.name
 	
-def make_enrollment(student, program,academic_year, section):
+def make_enrollment(student, program,academic_year, section, uncertain):
 	prog_enrollment = frappe.new_doc("Program Enrollment")
 	prog_enrollment.student = student
 	if program in ["Nursery", "Jr. K.G.", "Sr. K.G.", "PS"]:
