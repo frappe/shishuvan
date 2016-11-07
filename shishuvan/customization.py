@@ -52,10 +52,14 @@ def validate_admission_age_criteria(doc, method):
 			frappe.throw("Child does not meet age criteria for this year's admission")
 
 def title_case_name(doc):
-	doc.first_name = doc.first_name.title()
-	doc.middle_name = doc.middle_name.title()
-	doc.last_name = doc.last_name.title()
-	doc.title = doc.title.title()
+	if doc.first_name:
+		doc.first_name = doc.first_name.title()
+	if doc.middle_name:
+		doc.middle_name = doc.middle_name.title()
+	if doc.last_name:
+		doc.last_name = doc.last_name.title()
+	if doc.title:
+		doc.title = doc.title.title()
 
 def validate_text_size(doc, method):
 	for field in doc.meta.fields:
