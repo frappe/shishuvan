@@ -12,12 +12,14 @@ def validate_student_applicant(doc, method):
 	validate_admission_age_criteria(doc, method)
 	title_case_name(doc)
 	if doc.program=="Nursery":
-		doc.student_admission = "nursery-2017-18"
 		validate_text_size(doc, method)
 		validate_milestones(doc, method)
 		validate_sibling_info(doc, method)
 	else:
 		doc.student_admission = "Pre-admissions for 2017-18"
+	
+	if doc.student_admission == "nursery-2017-18":
+		frappe.throw("Online Admissions for Nursery have been closed")
 
 def submit_student_applicant(doc, method):
 	if doc.application_status != "Documents Verified":
