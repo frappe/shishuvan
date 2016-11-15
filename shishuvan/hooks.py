@@ -12,7 +12,6 @@ app_license = "MIT"
 
 doc_events = {
 	"Student Applicant": {
-		'after_insert': "shishuvan.customization.send_start_email",
 		"validate": "shishuvan.customization.validate_student_applicant",
 		"on_submit": "shishuvan.customization.submit_student_applicant",
 		"on_payment_authorized": "shishuvan.customization.on_payment_authorized"

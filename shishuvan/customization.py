@@ -89,11 +89,6 @@ def validate_sibling_info(doc, method):
 		else:
 			doc.your_child_is_the_eldest = "Middle"
 
-def send_start_email(doc, method):
-	frappe.get_doc('Email Alert', 'admission-begin').send(doc)
-
 def on_payment_authorized(doc, method, status):
-	if doc.program == "Nursery":
-		frappe.get_doc('Email Alert', 'admission-complete').send(doc)
-	else:
+	if doc.program != "Nursery":
 		frappe.get_doc('Email Alert', 'application-complete-non-nursery').send(doc)
