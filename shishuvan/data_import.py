@@ -128,3 +128,56 @@ def make_enrollment(student, program,academic_year, section, uncertain=False):
 	if uncertain:
 		prog_enrollment.uncertain = 1
 	prog_enrollment.save()
+
+def update_guardians():
+	with open(frappe.get_app_path('shishuvan', 'students.csv')) as csvfile:
+		readCSV = csv.DictReader(csvfile)
+		frappe.flags.in_import = True
+		i=1
+		for row in readCSV:	
+			sys.stdout.write("\rImporting Row {0}".format(i))
+			sys.stdout.flush()
+			i+=1
+		
+			mother = get_guardian(row["Mother Name"].title())
+			if mother:
+				if row["Mother Email"]:
+					mother.email_address = row["Mother Email"]
+				if row["Mother Mobile"]:
+					mother.mobile_number = row["Mother Mobile"]
+				if row["Phone"]:
+					mother.alternate_number = row["Phone"]
+				if row["Mother Organization"]:
+					mother.organization = row["Mother Organization"]
+				if row["Mother Organization Address"]:
+					mother.work_address = row["Mother Organization Address"]
+				if row["Mother Organization City"]:
+					mother.organization_city = row["Mother Organization City"]
+				mother.save()
+
+			frappe.flags.in_import = False
+
+			father = get_guardian(row["Father Name"].title())
+			if father:
+				if row["Father Email"]:
+					father.email_address = row["Father Email"]
+				if row["Father Mobile"]:
+					father.mobile_number = row["Father Mobile"]
+				if row["Phone"]:
+					father.alternate_number = row["Phone"]
+				if row["Father Organization"]:
+					father.organization = row["Father Organization"]
+				if row["Father Organization Address"]:
+					father.work_address = row["Father Organization Address"]
+				if row["Father Organization City"]:
+					father.organization_city = row["Father Organization City"]
+				father.save()
+			
+			frappe.db.commit()
+
+		frappe.flags.in_import = False
+
+def get_guardian(full_name):
+	guardian = frappe.db.get_all("Guardian", filters={"guardian_name": full_name})
+	if guardian:
+		return frappe.get_doc("Guardian", guardian[0].name)
