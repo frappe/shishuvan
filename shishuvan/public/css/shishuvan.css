@@ -1,10 +1,39 @@
-.btn-primary, .btn-primary:hover, .btn-primary:focus {
- background-color: #18a55b;
- border-color: #18a55b;
+.navbar-default {
+	background-color: #fbcf2f;
+	padding: 0px;
+	border-bottom: 0px;
 }
 
-.navbar-right {
- margin-top: 8px !important;
+.logged-in {
+	margin-top: -2px;
+	margin-bottom: -2px;
+}
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+	background-color: inherit;
+}
+
+.sidebar-block {
+	width: 20%;
+}
+
+.with-sidebar {
+	width: 80%;
+}
+
+.sidebar-item a {
+	text-transform: uppercase;
+}
+
+.navbar-default .navbar-nav > li > a, .navbar-brand {
+    color: #000 !important;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:focus {
+	background-color: #18a55b;
+	border-color: #18a55b;
 }
 
 .screenshot {

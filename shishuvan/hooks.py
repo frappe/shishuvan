@@ -19,7 +19,7 @@ doc_events = {
 }
 
 website_context = {
-	"favicon": 	'/assets/shishuvan/images/shishuvan-logo.png'
+	"favicon": 	'/assets/shishuvan/images/shishuvan-logo.png',
 }
 # Includes in <head>
 # ------------------
