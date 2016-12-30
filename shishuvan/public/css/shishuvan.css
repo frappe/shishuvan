@@ -1,3 +1,14 @@
+ @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+ body {
+	 font-family: "Open Sans";
+ }
+
+ article {
+	 line-height: 1.9;
+	 letter-spacing: 0.01em;
+ }
+
 .navbar-default {
 	background-color: #fbcf2f;
 	padding: 0px;
@@ -23,11 +34,13 @@
 
 .sidebar-item a {
 	text-transform: uppercase;
+	letter-spacing: 0.015em;
 }
 
 .navbar-default .navbar-nav > li > a, .navbar-brand {
     color: #000 !important;
 	text-transform: uppercase;
+	 letter-spacing: 0.01em;
 	font-size: 12px;
 }
 
