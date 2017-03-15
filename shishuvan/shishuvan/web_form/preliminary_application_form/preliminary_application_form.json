@@ -18,7 +18,7 @@
  "is_standard": 1, 
  "login_required": 1, 
  "max_attachment_size": 0, 
- "modified": "2017-02-12 01:28:38.308040", 
+ "modified": "2017-02-21 04:49:55.491426", 
  "modified_by": "Administrator", 
  "module": "Shishuvan", 
  "name": "preliminary-application-form", 
@@ -239,6 +239,7 @@
    "reqd": 1
   }, 
   {
+   "default": "INDIAN", 
    "fieldname": "nationality", 
    "fieldtype": "Data", 
    "hidden": 0, 
@@ -262,13 +263,27 @@
   }, 
   {
    "fieldname": "language_spoken_at_home", 
-   "fieldtype": "Data", 
+   "fieldtype": "Link", 
    "hidden": 0, 
    "label": "Language Spoken at Home", 
    "max_length": 0, 
    "max_value": 0, 
+   "options": "Student Language", 
    "read_only": 0, 
    "reqd": 1
+  }, 
+  {
+   "default": "", 
+   "description": "", 
+   "fieldname": "other_language", 
+   "fieldtype": "Data", 
+   "hidden": 0, 
+   "label": "Please specify other language", 
+   "max_length": 0, 
+   "max_value": 0, 
+   "options": "", 
+   "read_only": 0, 
+   "reqd": 0
   }, 
   {
    "fieldname": "previous_schooling", 
