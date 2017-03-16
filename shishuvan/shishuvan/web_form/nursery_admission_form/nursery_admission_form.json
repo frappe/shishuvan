@@ -18,7 +18,7 @@
  "is_standard": 1, 
  "login_required": 1, 
  "max_attachment_size": 0, 
- "modified": "2017-02-12 01:28:20.384950", 
+ "modified": "2017-03-10 14:58:13.942355", 
  "modified_by": "Administrator", 
  "module": "Shishuvan", 
  "name": "nursery-admission-form", 
@@ -254,7 +254,7 @@
    "reqd": 1
   }, 
   {
-   "default": "India", 
+   "default": "INDIAN", 
    "fieldname": "nationality", 
    "fieldtype": "Data", 
    "hidden": 0, 
@@ -278,11 +278,12 @@
   }, 
   {
    "fieldname": "language_spoken_at_home", 
-   "fieldtype": "Data", 
+   "fieldtype": "Link", 
    "hidden": 0, 
    "label": "Language Spoken at Home", 
    "max_length": 0, 
    "max_value": 0, 
+   "options": "Student Language", 
    "read_only": 0, 
    "reqd": 1
   }, 

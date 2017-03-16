@@ -7,16 +7,20 @@ import frappe
 import datetime
 from frappe.utils import cint, getdate, comma_and
 from dateutil.relativedelta import relativedelta
+from frappe.model.mapper import get_mapped_doc
+
 
 def validate_student_applicant(doc, method):
 	validate_admission_age_criteria(doc, method)
 	title_case_name(doc)
+	validate_offline_admission(doc)
 	if doc.program=="Nursery":
 		validate_text_size(doc, method)
 		validate_milestones(doc, method)
 		validate_sibling_info(doc, method)
 	else:
 		doc.student_admission = "Pre-admissions for 2017-18"
+
 
 def submit_student_applicant(doc, method):
 	if doc.application_status != "Documents Verified":
@@ -92,3 +96,50 @@ def validate_sibling_info(doc, method):
 def on_payment_authorized(doc, method, status):
 	if doc.program != "Nursery":
 		frappe.get_doc('Email Alert', 'application-complete-non-nursery').send(doc)
+
+def validate_offline_admission(doc):
+	if doc.form_number:
+		doc.paid = 1
+
+def link_student_guardian(doc, method):
+	if doc.student_applicant and not doc.guardians:
+		father_guardian = get_mapped_doc("Student Applicant", doc.student_applicant,
+			{"Student Applicant": {
+				"doctype": "Guardian",
+				"field_map": {
+					"father_name": "guardian_name", 
+					"father_email_id": "email_address", 
+					"father_mobile_number": "mobile_number", 
+					"father_landline_number": "alternate_number", 
+					"father_education": "education", 
+					"father_occupation": "occupation", 
+					"father_work_address": "work_address", 
+				}
+			}}, ignore_permissions=True)
+		father_guardian.save()
+		doc.append("guardians", {
+		"guardian": father_guardian.name,
+		"guardian_name": father_guardian.guardian_name,
+		"relation": "Father",
+		})
+
+		mother_guardian = get_mapped_doc("Student Applicant", doc.student_applicant,
+			{"Student Applicant": {
+				"doctype": "Guardian",
+				"field_map": {
+					"mother_name": "guardian_name", 
+					"mother_email_id": "email_address", 
+					"mother_mobile_number": "mobile_number", 
+					"mother_landline_number": "alternate_number", 
+					"mother_education": "education", 
+					"mother_occupation": "occupation", 
+					"mother_work_address": "work_address", 
+				}
+			}}, ignore_permissions=True)
+		mother_guardian.save()
+		doc.append("guardians", {
+		"guardian": mother_guardian.name,
+		"guardian_name": mother_guardian.guardian_name,
+		"relation": "Mother",
+		})
+		doc.save()
