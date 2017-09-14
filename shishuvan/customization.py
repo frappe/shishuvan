@@ -27,32 +27,33 @@ def submit_student_applicant(doc, method):
 		frappe.throw("Please change the status to 'Documents Verified' before submitting")
 
 def validate_admission_age_criteria(doc, method):
-		min_date = ""
-		max_date = ""
-		if doc.program=="Nursery":
-			min_date = "2013-09-01"
-			max_date = "2014-08-31"
-		if doc.program=="Jr. K.G.":
-			min_date = "2012-09-01"
-			max_date = "2013-08-31"
-		if doc.program=="Sr. K.G.":
-			min_date = "2011-09-01"
-			max_date = "2012-08-31"
-		if doc.program=="STD. I":
-			min_date = "2010-09-01"
-			max_date = "2011-08-31"
-		if doc.program=="STD. II":
-			min_date = "2009-09-01"
-			max_date = "2010-08-31"
-		if doc.program=="STD. III":
-			min_date = "2008-09-01"
-			max_date = "2009-08-31"
-		if doc.program=="STD. IV":
-			min_date = "2007-09-01"
-			max_date = "2008-08-31"
+	# only for testing purpose
+	min_date = ""
+	max_date = ""
+	if doc.program=="Nursery":
+		min_date = "2014-09-01"
+		max_date = "2015-09-30"
+	if doc.program=="Jr. K.G.":
+		min_date = "2013-10-01"
+		max_date = "2014-09-30"
+	if doc.program=="Sr. K.G.":
+		min_date = "2012-10-01"
+		max_date = "2013-09-30"
+	if doc.program=="STD. I":
+		min_date = "2011-10-01"
+		max_date = "2012-09-30"
+	if doc.program=="STD. II":
+		min_date = "2010-10-01"
+		max_date = "2011-09-30"
+	if doc.program=="STD. III":
+		min_date = "2009-10-01"
+		max_date = "2010-09-30"
+	if doc.program=="STD. IV":
+		min_date = "2008-10-01"
+		max_date = "2009-09-30"
 
-		if (min_date and getdate(doc.date_of_birth) < getdate(min_date) or getdate(doc.date_of_birth) > getdate(max_date)):
-			frappe.throw("Child does not meet age criteria for this year's admission")
+	if (min_date and getdate(doc.date_of_birth) < getdate(min_date) or getdate(doc.date_of_birth) > getdate(max_date)):
+		frappe.throw("Child does not meet age criteria for this year's admission")
 
 def title_case_name(doc):
 	if doc.first_name:
