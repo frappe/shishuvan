@@ -19,7 +19,7 @@ def validate_student_applicant(doc, method):
 		validate_milestones(doc, method)
 		validate_sibling_info(doc, method)
 	else:
-		doc.student_admission = "Pre-admissions for 2017-18"
+		doc.student_admission = "Pre-admissions for 2018-19"
 
 
 def submit_student_applicant(doc, method):
