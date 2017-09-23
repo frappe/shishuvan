@@ -10,9 +10,10 @@
  }
 
 .navbar-default {
-	background-color: #fbcf2f;
-	padding: 0px;
-	border-bottom: 0px;
+	border-top: 1px solid #18a55b;
+	border-bottom: 1px solid #18a55b !important;
+	/*background-color: #fbcf2f;*/
+	padding: 4px 0px;
 }
 
 .logged-in {
