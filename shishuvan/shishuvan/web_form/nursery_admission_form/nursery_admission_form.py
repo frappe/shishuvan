@@ -11,4 +11,6 @@ def get_context(context):
 
 def get_list_context(context):
 	context.row_template = 'shishuvan/templates/includes/applicant_row.html'
-	context.filters = {'program': 'Nursery'}
+	context.filters = {
+		"student_admission": "Nursery Admissions for 2018-19"
+	}
