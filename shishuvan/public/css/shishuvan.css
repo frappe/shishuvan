@@ -26,14 +26,6 @@
 	background-color: inherit;
 }
 
-.sidebar-block {
-	width: 20%;
-}
-
-.with-sidebar {
-	width: 80%;
-}
-
 .sidebar-item a {
 	text-transform: uppercase;
 	letter-spacing: 0.015em;
@@ -52,7 +44,13 @@
 }
 
 .sidebar-block {
-    border-right: 1px solid #18a55b;
+	border-right: 1px solid #18a55b;
+}
+
+@media (max-width: 767px) {
+	.sidebar-block {
+		border-right: 0px;
+	}
 }
 
 .web-footer {
