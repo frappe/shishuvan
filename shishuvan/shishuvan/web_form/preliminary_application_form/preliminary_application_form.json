@@ -8,6 +8,7 @@
  "allow_print": 1, 
  "amount": 100.0, 
  "amount_based_on_field": 0, 
+ "breadcrumbs": "", 
  "creation": "2016-10-03 12:48:31.385763", 
  "currency": "INR", 
  "doc_type": "Student Applicant", 
@@ -18,12 +19,12 @@
  "is_standard": 1, 
  "login_required": 1, 
  "max_attachment_size": 0, 
- "modified": "2017-09-23 18:26:03.365648", 
+ "modified": "2017-09-24 18:36:15.420000", 
  "modified_by": "Administrator", 
  "module": "Shishuvan", 
  "name": "preliminary-application-form", 
  "owner": "Administrator", 
- "payment_button_help": "<b><br>* Your application will not be accepted unless you make the payment. <br><br>\n*Please preserve a soft/hard copy of your application for your future reference<br><br>\n*Once you make the payment you will not be able to change the application.<br><br>\n* Please make note of the Application no, (W.xxxxxxxx) which should be used for all further correspondence <br></b><br>\n<p>On making payment, it is understood that the information/particulars furnished by you in admission form are correct and true. </p>", 
+ "payment_button_help": "<b><br>* Your application form will not be accepted unless you make the payment. <br><br>\n*Please preserve a soft/hard copy of your application form for your future reference<br><br>\n*Once you make the payment you will not be able to change the application form.<br><br>\n* Please make note of the Application Form No, (W.xxxxxxxx) which should be used for all further correspondence <br></b><br>\n<p>On making payment, it is understood that the information/particulars furnished by you in application form are correct and true. </p>", 
  "payment_button_label": "Make Payment", 
  "payment_gateway": "Razorpay", 
  "print_format": "Pre-application Print", 
@@ -44,6 +45,24 @@
    "options": "", 
    "read_only": 0, 
    "reqd": 1
+  }, 
+  {
+   "fieldtype": "HTML", 
+   "hidden": 0, 
+   "max_length": 0, 
+   "max_value": 0, 
+   "options": "<div><blockquote><h4><q>There is no such thing as <strong> perfect </strong> parent . So just be a <strong> real</strong> one </q> <br><small> SUE ATKINS</small> </h4></blockquote></div>\n<div>\nDear prospective parent, <p>\nAs you embark on the journey to choosing the right school for your child we encourage both the parents to discuss the questions and respond jointly, Your responses should be thoughtful and honest rather than lengthy. </p>Wishing you all the best!<br>\n- Shishuvan\n<br>\n</div>", 
+   "read_only": 0, 
+   "reqd": 0
+  }, 
+  {
+   "fieldname": "", 
+   "fieldtype": "Section Break", 
+   "hidden": 0, 
+   "max_length": 0, 
+   "max_value": 0, 
+   "read_only": 0, 
+   "reqd": 0
   }, 
   {
    "fieldname": "first_name", 
@@ -680,7 +699,7 @@
    "max_length": 0, 
    "max_value": 0, 
    "read_only": 0, 
-   "reqd": 1
+   "reqd": 0
   }, 
   {
    "fieldtype": "Page Break", 
