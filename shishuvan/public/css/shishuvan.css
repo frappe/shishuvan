@@ -1,4 +1,5 @@
  @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+ @import url('https://fonts.googleapis.com/css?family=Merriweather:300,400');
 
  body {
 	 font-family: "Open Sans";
@@ -50,9 +51,33 @@
 	border-color: #18a55b;
 }
 
+.sidebar-block {
+    border-right: 1px solid #18a55b;
+}
+
+.web-footer {
+    border-top: 1px solid #18a55b;
+}
+
 .screenshot {
     border: 1px solid #d1d8dd;
     box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.15);
     margin: 8px 0px;
     max-width: 100%;
+}
+
+.web-page-content, .blog-text, .post-description {
+	font-family: 'Merriweather';
+	font-weight: 300;
+	font-size: 16px;
+}
+
+.page-content h1 {
+	font-weight: 600;
+	font-size: 32px;
+	padding-top: 30px;
+}
+
+.blog-list-item h2 {
+	font-weight: 600;
 }
