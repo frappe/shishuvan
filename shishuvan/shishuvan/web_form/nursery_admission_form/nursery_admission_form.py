@@ -1,10 +1,12 @@
 from __future__ import unicode_literals
 
 import frappe
+from frappe import _
 
 def get_context(context):
 	'''Update context'''
-
+	if context.doc:
+		context.title = _("Application Form No:") + " " + context.doc.name
 	# make form read-only if paid
 	if context.doc and context.doc.paid:
 		context.read_only = 1
