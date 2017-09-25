@@ -1,7 +1,7 @@
 {
  "attach_print": 0, 
- "condition": "doc.paid==1 and doc.program != \"Nursery\"", 
- "creation": "2016-10-07 10:38:00.173190", 
+ "condition": "doc.paid==1 and doc.program == \"Nursery\"", 
+ "creation": "2017-09-25 11:34:18.768512", 
  "days_in_advance": 0, 
  "docstatus": 0, 
  "doctype": "Email Alert", 
@@ -10,11 +10,11 @@
  "event": "Value Change", 
  "idx": 0, 
  "is_standard": 1, 
- "message": "Thank you for completing your Application!\n\nWe shall get in touch with you in case of any vacancy in the class and if your application is shortlisted.\n\nIf you have any questions, please email us at admission@shishuvan.com", 
- "modified": "2017-09-25 11:36:13.255160", 
+ "message": "Thank you for completing your Application!\n\nWe shall get in touch with you after reviewing your application form and will inform you if your application is shortlisted.\n\nIf you have any questions, please email us at admission@shishuvan.com", 
+ "modified": "2017-09-25 11:38:56.067754", 
  "modified_by": "Administrator", 
  "module": "Shishuvan", 
- "name": "application-complete-non-nursery", 
+ "name": "admission-nursery-email", 
  "owner": "Administrator", 
  "recipients": [
   {
