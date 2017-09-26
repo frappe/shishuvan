@@ -94,9 +94,6 @@ def validate_sibling_info(doc, method):
 		else:
 			doc.your_child_is_the_eldest = "Middle"
 
-def on_payment_authorized(doc, method, status):
-	if doc.program != "Nursery":
-		frappe.get_doc('Email Alert', 'application-complete-non-nursery').send(doc)
 
 def validate_offline_admission(doc):
 	if doc.form_number:
