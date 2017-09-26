@@ -15,8 +15,7 @@ fixtures = ["Custom Script"]
 doc_events = {
 	"Student Applicant": {
 		"validate": "shishuvan.customization.validate_student_applicant",
-		"on_submit": "shishuvan.customization.submit_student_applicant",
-		"on_payment_authorized": "shishuvan.customization.on_payment_authorized"
+		"on_submit": "shishuvan.customization.submit_student_applicant"
 	},
 	"Student": {
 		"on_update": "shishuvan.customization.link_student_guardian"

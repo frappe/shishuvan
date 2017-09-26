@@ -1,5 +1,5 @@
 {
- "attach_print": 0, 
+ "attach_print": 1, 
  "condition": "doc.paid==1 and doc.program == \"Nursery\"", 
  "creation": "2017-09-25 11:34:18.768512", 
  "days_in_advance": 0, 
@@ -10,18 +10,21 @@
  "event": "Value Change", 
  "idx": 0, 
  "is_standard": 1, 
- "message": "Thank you for completing your Application!\n\nWe shall get in touch with you after reviewing your application form and will inform you if your application is shortlisted.\n\nIf you have any questions, please email us at admission@shishuvan.com", 
- "modified": "2017-09-25 11:38:56.067754", 
+ "message": "Dear applicant,\n\nThank you for completing your Application Form No {{ doc.name }} for the student {{ doc.first_name }}.\n\nWe shall get in touch with you after reviewing your application form and will inform you if your application is shortlisted. Also, the final list of students admitted to Nursery (2018-19) will be put up on the school notice board on Friday, 22nd December 2017.\n\nIf you have any questions, please email us at admission@shishuvan.com\n\nPFA a copy of your admission application.\n\nSd-\nShishuvan", 
+ "modified": "2017-09-27 02:15:25.700428", 
  "modified_by": "Administrator", 
  "module": "Shishuvan", 
  "name": "admission-nursery-email", 
  "owner": "Administrator", 
+ "print_format": "Application Print", 
+ "property_value": "Applied", 
  "recipients": [
   {
    "cc": "", 
    "email_by_document_field": "owner"
   }
  ], 
+ "set_property_after_alert": "application_status", 
  "subject": "Your Application is Complete!", 
  "value_changed": "paid"
 }
