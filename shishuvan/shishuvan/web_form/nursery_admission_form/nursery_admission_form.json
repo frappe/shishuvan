@@ -18,7 +18,7 @@
  "is_standard": 1, 
  "login_required": 1, 
  "max_attachment_size": 0, 
- "modified": "2017-09-26 23:49:42.875005", 
+ "modified": "2017-10-10 12:21:38.897423", 
  "modified_by": "Administrator", 
  "module": "Shishuvan", 
  "name": "nursery-admission-form", 
@@ -1817,7 +1817,7 @@
   }, 
   {
    "fieldname": "number_of_hours_your_child_watches_tv_everyday", 
-   "fieldtype": "Data", 
+   "fieldtype": "Int", 
    "hidden": 0, 
    "label": "Number of hours your child watches TV everyday", 
    "max_length": 0, 
