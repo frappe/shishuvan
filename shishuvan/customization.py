@@ -11,7 +11,7 @@ from frappe.model.mapper import get_mapped_doc
 
 
 def validate_student_applicant(doc, method):
-	validate_admission_age_criteria(doc, method)
+	# validate_admission_age_criteria(doc, method)
 	title_case_name(doc)
 	validate_offline_admission(doc)
 	if doc.program=="Nursery":
