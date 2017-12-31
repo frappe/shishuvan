@@ -28,7 +28,7 @@ def execute(filters=None):
 
 	for d in program_enrollments:
 		student_details = student_map.get(d.student)
-		row = [d.student, d.student_name, group_roll_no_map.get(d.student), student_details.get("general_register_number"),\
+		row = [student_details.get("enabled"), d.student, d.student_name, group_roll_no_map.get(d.student), student_details.get("general_register_number"),\
 			student_details.get("gender"), student_details.get("date_of_birth"),  student_details.get("joining_date"),\
 			student_details.get("blood_group"), student_details.get("student_mobile_number"),\
 			student_details.get("student_email_id"), student_details.get("address"), student_details.get("caste"),\
@@ -46,6 +46,7 @@ def execute(filters=None):
 
 def get_columns():
 	columns = [
+		_("Enabled") + "::50",
 		_("Student ID") + ":Link/Student:90",
 		_("Student Name") + "::150",
 		_("Group Roll No") + "::60",
@@ -87,7 +88,7 @@ def get_student_details(student_list):
 	student_map = frappe._dict()
 	student_details = frappe.db.sql('''
 		select name, date_of_birth, blood_group, gender, student_mobile_number, student_email_id, address_line_1, address_line_2,
-		city, state, caste, religion, nationality, general_register_number, joining_date, aadhar_number 
+		city, state, caste, religion, nationality, general_register_number, joining_date, aadhar_number, enabled
 		from `tabStudent` where name in (%s)''' % ', '.join(['%s']*len(student_list)), tuple(student_list), as_dict=1)
 	for s in student_details:
 		student = frappe._dict()
@@ -103,6 +104,7 @@ def get_student_details(student_list):
 		student["general_register_number"] = s.general_register_number
 		student["joining_date"] = s.joining_date
 		student["aadhar_number"] = s.aadhar_number
+		student["enabled"] = "Active" if s.enabled else "Left"
 		student_map[s.name] = student
 	return student_map
 
